@@ -2412,10 +2412,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SpecialityServices",
@@ -7018,7 +7014,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".speciality[data-v-793f7d69] {\n  margin-top: 80px;\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: auto;\n  max-width: 1100px;\n  margin-bottom: 50px;\n  position: relative;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality-upper .lottie[data-v-793f7d69] {\n  position: absolute;\n  right: 0;\n  top: -30px;\n  width: 130px;\n  height: 130px;\n}", ""]);
+exports.push([module.i, ".speciality[data-v-793f7d69] {\n  margin-top: 80px;\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: auto auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}", ""]);
 
 // exports
 
@@ -39977,30 +39973,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "speciality" }, [
-    _c(
-      "div",
-      { staticClass: "speciality-upper" },
-      [
-        _c("h2", [_vm._v("What we specialize in")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "\n            Not only do we provide conclusive results of polygraph tests,\n            but also a comprehensive report on each subject including reputation,\n            personal character traits, educational background, employment history\n            and a overall completed profile.\n        "
-          )
-        ]),
-        _vm._v(" "),
-        _c("lottie-player", {
-          staticClass: "lottie",
-          attrs: {
-            src: "https://assets10.lottiefiles.com/packages/lf20_5fqna4gv.json",
-            background: "transparent",
-            speed: "1",
-            autoplay: ""
-          }
-        })
-      ],
-      1
-    ),
+    _vm._m(0),
     _vm._v(" "),
     _c(
       "div",
@@ -40079,7 +40052,22 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "speciality-upper" }, [
+      _c("h2", [_vm._v("What we specialize in")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n            Not only do we provide conclusive results of polygraph tests,\n            but also a comprehensive report on each subject including reputation,\n            personal character traits, educational background, employment history\n            and a overall completed profile.\n        "
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

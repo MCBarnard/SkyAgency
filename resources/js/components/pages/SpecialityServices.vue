@@ -8,10 +8,6 @@
                 personal character traits, educational background, employment history
                 and a overall completed profile.
             </p>
-            <lottie-player  class="lottie"
-                src="https://assets10.lottiefiles.com/packages/lf20_5fqna4gv.json"
-                background="transparent"  speed="1" autoplay
-            ></lottie-player>
         </div>
         <div class="speciality-inner">
             <SpecialityCard>
@@ -66,21 +62,11 @@ export default {
         max-width: 1100px;
     }
     &-upper {
-        margin: auto;
+        margin: auto auto 50px auto;
         max-width: 1100px;
-        margin-bottom: 50px;
-        position: relative;
 
         h3, p {
             max-width: 550px;
-        }
-
-        .lottie {
-            position: absolute;
-            right: 0;
-            top: -30px;
-            width: 130px;
-            height: 130px;
         }
     }
 }
