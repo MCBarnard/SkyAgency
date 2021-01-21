@@ -1,15 +1,21 @@
 <template>
     <div class="contact">
-        Call us
+        <ContactForm />
     </div>
 </template>
 
 <script>
+import ContactForm from "../components/ContactForm";
 export default {
-    name: "ContactUs"
+    name: "ContactUs",
+    components: {
+        ContactForm
+    }
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.contact {
+    margin-top: 80px;
+}
 </style>

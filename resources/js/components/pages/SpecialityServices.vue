@@ -1,7 +1,8 @@
 <template>
     <div class="speciality">
+        <SpecialityHero />
         <div class="speciality-upper">
-            <h2>What we specialize in</h2>
+            <h2 class="heading">What we specialize in</h2>
             <p>
                 Not only do we provide conclusive results of polygraph tests,
                 but also a comprehensive report on each subject including reputation,
@@ -40,18 +41,19 @@
 
 <script>
 import SpecialityCard from "../components/SpecialityCard";
+import SpecialityHero from "../components/SpecialityHero";
 
 export default {
     name: "SpecialityServices",
     components: {
-        SpecialityCard
+        SpecialityCard,
+        SpecialityHero
     }
 }
 </script>
 
 <style scoped lang="scss">
 .speciality {
-    margin-top: 80px;
     width: 100%;
     margin-bottom: 100px;
 
@@ -65,9 +67,37 @@ export default {
         margin: auto auto 50px auto;
         max-width: 1100px;
 
+        .heading {
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: #1c3956;
+                z-index: -1;
+                width: 100%;
+                animation: 1s widthAnimation ease;
+            }
+        }
+
         h3, p {
             max-width: 550px;
         }
+    }
+}
+
+@keyframes widthAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
 </style>
