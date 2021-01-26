@@ -43,7 +43,8 @@ export default {
             margin: auto;
 
             &-left {
-                padding-top: 80px;
+                padding-top: 100px;
+                z-index: 1;
 
                 &-content {
                     max-width: 600px;
@@ -81,6 +82,78 @@ export default {
             &-right {
                 img {
                     max-width: 350px;
+                }
+            }
+        }
+    }
+    @media (max-width: 690px) {
+        .hero-wrapper {
+            overflow: hidden;
+            &-inner {
+               min-width: 634px;
+
+                &-left {
+
+
+                    &-content {
+
+
+                        h1 {
+
+                        }
+
+                        p {
+
+                        }
+
+                        .inverted-link {
+
+                            i {
+
+                            }
+                        }
+                    }
+
+                }
+                &-right {
+                    img {
+
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 690px) {
+        .hero-wrapper {
+            overflow: unset;
+            &-inner {
+                min-width: unset;
+
+                &-left {
+
+
+                    &-content {
+
+
+                        h1 {
+
+                        }
+
+                        p {
+
+                        }
+
+                        .inverted-link {
+
+                            i {
+
+                            }
+                        }
+                    }
+
+                }
+                &-right {
+                    display: none;
                 }
             }
         }

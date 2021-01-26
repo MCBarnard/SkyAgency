@@ -1,21 +1,36 @@
 <template>
 <div>
     <div class="container">
+        <div class="contact-us-form__wrapper__left__heading">
+            <span>Ready to take the next steps?</span>
+            <span class="subtext">The truth is waiting...</span>
+        </div>
+        <hr>
         <form action="/action_page.php">
-            <label for="name">Name</label>
+            <label class="head-label">Where do you need tests done?</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="area" id="inlineRadio2" value="cpt">
+                <label class="form-check-label" for="inlineRadio2">Mosselbay / George</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="area" id="inlineRadio1" value="jhb">
+                <label class="form-check-label" for="inlineRadio1">Johannesburg</label>
+            </div>
+            <br>
+            <label class="head-label" for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name">
 
-            <label for="contact_dets">Email Or Cellphone number</label>
+            <label class="head-label" for="contact_dets">Email Or Cellphone number</label>
             <input type="text" id="contact_dets" name="contact_dets" placeholder="Email address / Cell">
-
-            <label for="test">Type of Test you would like to enquire about</label>
+            <label class="head-label" for="test">Type of Test you would like to enquire about</label>
             <select id="test" name="country">
                 <option value="preEmploy">Pre Employment</option>
                 <option value="incident">Incident investigation</option>
                 <option value="other">Other</option>
             </select>
 
-            <label for="message">Your message</label>
+            <label class="head-label" for="message">Your message</label>
             <textarea id="message" name="message" placeholder="Write something.."></textarea>
 
             <input type="submit" value="Submit">
@@ -49,6 +64,9 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
 
 input[type=submit]:hover {
@@ -58,5 +76,23 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     padding: 20px;
+}
+.contact-us-form__wrapper__left__heading {
+    color: #041b2b;
+    font-size: 22px;
+    width: 100%;
+    span {
+        display: block;
+        font-weight: 600;
+    }
+    .subtext {
+        font-weight: 400;
+        color: #3d4f5c;
+        font-size: 1rem;
+    }
+}
+.head-label {
+    font-size: 16px;
+    font-weight: 600;
 }
 </style>

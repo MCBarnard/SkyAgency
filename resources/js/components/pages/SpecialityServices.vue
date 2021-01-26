@@ -100,4 +100,10 @@ export default {
         width: 100%;
     }
 }
+
+@media (max-width: 1140px) {
+    .speciality {
+        padding: 0 20px;
+    }
+}
 </style>

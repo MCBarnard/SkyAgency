@@ -84,4 +84,22 @@ export default {
         margin: auto;
     }
 }
+
+@media (max-width: 1200px){
+    .serv-wrapper {
+        padding: 20px;
+    }
+}
+@media (max-width: 1000px){
+    .serv-wrapper {
+        padding: 20px;
+
+        .row {
+            justify-content: center;
+        }
+        .card {
+            margin: 10px;
+        }
+    }
+}
 </style>

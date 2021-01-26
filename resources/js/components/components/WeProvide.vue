@@ -31,11 +31,13 @@
                 </div>
             </div>
             <div class="provide-wrapper-right">
-                <lottie-player class="lottie-player" src="https://assets1.lottiefiles.com/packages/lf20_fnQHkf.json"
-                               background="transparent"  speed="1"  style="width: 424px; height: 239px;"
-                               loop  autoplay>
-                </lottie-player>
-                <img class="desktop" :src="'/images/desktop.png'" alt="Heart beat monitoring with SKY Agency polygraphs">
+                <div class="image-container">
+                    <lottie-player class="lottie-player" src="https://assets1.lottiefiles.com/packages/lf20_fnQHkf.json"
+                                   background="transparent"  speed="1"  style="width: 424px; height: 239px;"
+                                   loop  autoplay>
+                    </lottie-player>
+                    <img class="desktop" :src="'/images/desktop.png'" alt="Heart beat monitoring with SKY Agency polygraphs">
+                </div>
             </div>
         </div>
     </div>
@@ -105,17 +107,48 @@ export default {
         }
 
         &-right {
-            position: relative;
 
             .desktop {
                 display: block;
-                margin: 85px auto 0;
             }
 
             .lottie-player {
                 position: absolute;
-                top: 100px;
+                top: 16px;
                 left: 13px;
+            }
+            .image-container {
+                position: relative;
+                margin: 85px auto 0;
+            }
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .provide {
+        &-wrapper {
+            margin: 0;
+            padding: 0 20px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .provide {
+        &-wrapper {
+            flex-direction: column;
+            &-right {
+                .image-container {
+                    max-width: 450px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 490px) {
+    .provide {
+        &-wrapper {
+            &-right {
+                display: none;
             }
         }
     }

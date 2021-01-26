@@ -2003,6 +2003,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ContactForm"
 });
@@ -2275,6 +2290,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "WeProvide"
 });
@@ -2395,6 +2412,53 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/ContactForm */ "./resources/js/components/components/ContactForm.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6953,7 +7017,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".call-to-action[data-v-4a644b0d] {\n  position: relative;\n  padding: 6.5rem 0 0 0;\n  width: 100%;\n  overflow: hidden;\n  z-index: 0;\n}\n.call-to-action .background-report[data-v-4a644b0d] {\n  position: absolute;\n  width: 100%;\n  top: 0;\n}\n.call-to-action .overlay[data-v-4a644b0d] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  background: #00427b;\n  background: linear-gradient(-90deg, rgba(0, 66, 123, 0.8) 10%, rgba(0, 23, 64, 0.8) 75%);\n}\n.call-to-action-content[data-v-4a644b0d] {\n  display: flex;\n  justify-content: space-between;\n  max-width: 1100px;\n  margin: auto;\n}\n.call-to-action-content-left[data-v-4a644b0d] {\n  color: #FFFFFF;\n  z-index: 1;\n  max-width: 600px;\n  text-shadow: 0px 0px 6px #000000;\n}\n.call-to-action-content-left h1[data-v-4a644b0d] {\n  font-size: 38px;\n  font-weight: bold;\n}\n.call-to-action-content-left h3[data-v-4a644b0d] {\n  font-size: 22px;\n  font-weight: 400;\n}\n.call-to-action-content-left span[data-v-4a644b0d] {\n  display: block;\n  font-size: 18px;\n  margin-left: 2rem;\n}\n.call-to-action-content-left span i[data-v-4a644b0d] {\n  font-size: 18px;\n}\n.call-to-action-content-left .buttons-wrapper[data-v-4a644b0d] {\n  max-width: 245px;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 16px;\n}\n.call-to-action-content-left .buttons-wrapper a[data-v-4a644b0d] {\n  text-shadow: unset;\n  color: #FFFFFF;\n}\n.call-to-action-content-right[data-v-4a644b0d] {\n  z-index: 1;\n}", ""]);
+exports.push([module.i, ".call-to-action[data-v-4a644b0d] {\n  position: relative;\n  padding: 6.5rem 0 0 0;\n  width: 100%;\n  overflow: hidden;\n  z-index: 0;\n}\n.call-to-action .background-report[data-v-4a644b0d] {\n  position: absolute;\n  width: 100%;\n  top: 0;\n  left: 0;\n}\n.call-to-action .overlay[data-v-4a644b0d] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: #00427b;\n  background: linear-gradient(-90deg, rgba(0, 66, 123, 0.8) 10%, rgba(0, 23, 64, 0.8) 75%);\n}\n.call-to-action-content[data-v-4a644b0d] {\n  display: flex;\n  justify-content: space-between;\n  max-width: 1100px;\n  margin: auto;\n}\n.call-to-action-content-left[data-v-4a644b0d] {\n  color: #FFFFFF;\n  z-index: 1;\n  max-width: 600px;\n  text-shadow: 0px 0px 6px #000000;\n}\n.call-to-action-content-left h1[data-v-4a644b0d] {\n  font-size: 38px;\n  font-weight: bold;\n}\n.call-to-action-content-left h3[data-v-4a644b0d] {\n  font-size: 22px;\n  font-weight: 400;\n}\n.call-to-action-content-left span[data-v-4a644b0d] {\n  display: block;\n  font-size: 18px;\n  margin-left: 2rem;\n}\n.call-to-action-content-left span i[data-v-4a644b0d] {\n  font-size: 18px;\n}\n.call-to-action-content-left .buttons-wrapper[data-v-4a644b0d] {\n  max-width: 245px;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 16px;\n  color: #FFFFFF;\n}\n.call-to-action-content-left .buttons-wrapper .btn-primary[data-v-4a644b0d] {\n  text-shadow: unset;\n  color: #FFFFFF !important;\n}\n.call-to-action-content-right[data-v-4a644b0d] {\n  z-index: 1;\n  display: flex;\n  justify-content: flex-end;\n  flex-direction: column;\n}\n@media (max-width: 1200px) {\n.call-to-action[data-v-4a644b0d] {\n    padding: 80px 20px 0;\n}\n}\n@media (max-width: 992px) {\n.call-to-action[data-v-4a644b0d] {\n    padding: 100px 20px 0;\n}\n.call-to-action-content-left h1[data-v-4a644b0d] {\n    font-size: 31px;\n}\n.call-to-action-content-left h3[data-v-4a644b0d] {\n    font-size: 18px;\n}\n.call-to-action-content-left span[data-v-4a644b0d] {\n    font-size: 16px;\n    margin-left: 1rem;\n}\n.call-to-action-content-left span i[data-v-4a644b0d] {\n    transform: translateY(4px);\n    font-size: 16px;\n}\n}\n@media (max-width: 768px) {\n.call-to-action[data-v-4a644b0d] {\n    padding: 100px 20px 50px;\n}\n.call-to-action .background-report[data-v-4a644b0d] {\n    display: none;\n}\n.call-to-action-content-right[data-v-4a644b0d] {\n    display: none;\n}\n}\n@media (max-width: 400px) {\n.call-to-action-content-left h1[data-v-4a644b0d] {\n    font-size: 26px;\n}\n.call-to-action-content-right[data-v-4a644b0d] {\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -6972,7 +7036,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "input[type=text][data-v-14b809f6], select[data-v-14b809f6], textarea[data-v-14b809f6] {\n  width: 100%;\n  padding: 12px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  box-sizing: border-box;\n  margin-top: 6px;\n  margin-bottom: 16px;\n  resize: vertical;\n}\ninput[type=submit][data-v-14b809f6] {\n  background-color: #1c3956;\n  color: white;\n  padding: 12px 20px;\n  border: none;\n  border-radius: 4px;\n  cursor: pointer;\n}\ninput[type=submit][data-v-14b809f6]:hover {\n  background-color: #234a72;\n}\n.container[data-v-14b809f6] {\n  border-radius: 5px;\n  padding: 20px;\n}", ""]);
+exports.push([module.i, "input[type=text][data-v-14b809f6], select[data-v-14b809f6], textarea[data-v-14b809f6] {\n  width: 100%;\n  padding: 12px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  box-sizing: border-box;\n  margin-top: 6px;\n  margin-bottom: 16px;\n  resize: vertical;\n}\ninput[type=submit][data-v-14b809f6] {\n  background-color: #1c3956;\n  color: white;\n  padding: 12px 20px;\n  border: none;\n  border-radius: 4px;\n  cursor: pointer;\n  width: 100%;\n  margin: auto;\n  display: block;\n}\ninput[type=submit][data-v-14b809f6]:hover {\n  background-color: #234a72;\n}\n.container[data-v-14b809f6] {\n  border-radius: 5px;\n  padding: 20px;\n}\n.contact-us-form__wrapper__left__heading[data-v-14b809f6] {\n  color: #041b2b;\n  font-size: 22px;\n  width: 100%;\n}\n.contact-us-form__wrapper__left__heading span[data-v-14b809f6] {\n  display: block;\n  font-weight: 600;\n}\n.contact-us-form__wrapper__left__heading .subtext[data-v-14b809f6] {\n  font-weight: 400;\n  color: #3d4f5c;\n  font-size: 1rem;\n}\n.head-label[data-v-14b809f6] {\n  font-size: 16px;\n  font-weight: 600;\n}", ""]);
 
 // exports
 
@@ -7010,7 +7074,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".logos[data-v-363156a8] {\n  width: 100%;\n}\n.logos-inner[data-v-363156a8] {\n  width: 100%;\n  max-width: 1100px;\n  margin: 50px auto;\n}\n.logos-inner .heading[data-v-363156a8] {\n  display: flex;\n  font-size: 24px;\n}\n.logos-inner .heading i[data-v-363156a8] {\n  color: gold;\n  line-height: 37px;\n}\n.logos-inner .heading span[data-v-363156a8] {\n  padding-left: 10px;\n}\n.logos-inner-logos[data-v-363156a8] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.logos-inner-logos img[data-v-363156a8] {\n  margin: 10px 30px;\n}\n.logos-inner-logos .absa[data-v-363156a8] {\n  max-width: 150px;\n  margin-left: 0;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 55px;\n  margin-top: 30px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n  max-width: 120px;\n  max-height: 100px;\n  margin-top: 0;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 150px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 60px;\n  margin-top: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 50px;\n  margin-top: 40px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 45px;\n  margin-top: 40px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n  max-width: 270px;\n  max-height: 50px;\n  margin-right: 0;\n  margin-top: 25px;\n}", ""]);
+exports.push([module.i, ".logos[data-v-363156a8] {\n  width: 100%;\n}\n.logos-inner[data-v-363156a8] {\n  width: 100%;\n  max-width: 1100px;\n  margin: 50px auto;\n}\n.logos-inner .heading[data-v-363156a8] {\n  display: flex;\n  font-size: 24px;\n}\n.logos-inner .heading i[data-v-363156a8] {\n  color: gold;\n  line-height: 37px;\n}\n.logos-inner .heading span[data-v-363156a8] {\n  padding-left: 10px;\n}\n.logos-inner-logos[data-v-363156a8] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.logos-inner-logos img[data-v-363156a8] {\n  margin: 10px 30px;\n}\n.logos-inner-logos .absa[data-v-363156a8] {\n  max-width: 150px;\n  margin-left: 0;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 55px;\n  margin-top: 30px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n  max-width: 120px;\n  max-height: 100px;\n  margin-top: 0;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 150px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 60px;\n  margin-top: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 50px;\n  margin-top: 40px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 45px;\n  margin-top: 40px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n  max-width: 270px;\n  max-height: 50px;\n  margin-right: 0;\n  margin-top: 25px;\n}\n@media (max-width: 1150px) {\n.logos-inner-logos .edcon[data-v-363156a8] {\n    display: none;\n}\n}\n@media (max-width: 920px) {\n.logos-inner-logos .absa[data-v-363156a8] {\n    max-width: 90px;\n    margin-left: 30px;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n    max-width: 90px;\n    max-height: 40px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n    display: none;\n    max-width: 90px;\n    max-height: 60px;\n    margin-top: 12px;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n    max-width: 90px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n    display: unset;\n    max-width: 140px;\n    max-height: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n    max-width: 140px;\n    max-height: 35px;\n    margin-top: 20px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n    max-width: 140px;\n    max-height: 30px;\n    margin-top: 25px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 35px;\n    margin-top: 24px;\n    margin-right: 30px;\n}\n}\n@media (max-width: 710px) {\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n    display: none;\n}\n}\n@media (max-width: 576px) {\n.logos[data-v-363156a8] {\n    padding: 0 20px;\n}\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px 15px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n    display: none;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 30px;\n}\n}\n@media (max-width: 340px) {\n.logos[data-v-363156a8] {\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -7029,7 +7093,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".serv-wrapper[data-v-49a000d2] {\n  background: #eaeaea;\n  width: 100%;\n  padding: 50px 0;\n}\n.cards-container[data-v-49a000d2] {\n  width: 100%;\n  max-width: 1100px;\n  margin: auto;\n}\n.cards-container .heading[data-v-49a000d2] {\n  border-bottom: 3px solid #001a6b;\n  width: 130px;\n  margin: auto;\n}\n.cards-container .paragraph[data-v-49a000d2] {\n  max-width: 270px;\n  margin: 12px auto;\n}\n.cards-container .card[data-v-49a000d2] {\n  max-width: 320px;\n  width: 100%;\n  margin: auto;\n}", ""]);
+exports.push([module.i, ".serv-wrapper[data-v-49a000d2] {\n  background: #eaeaea;\n  width: 100%;\n  padding: 50px 0;\n}\n.cards-container[data-v-49a000d2] {\n  width: 100%;\n  max-width: 1100px;\n  margin: auto;\n}\n.cards-container .heading[data-v-49a000d2] {\n  border-bottom: 3px solid #001a6b;\n  width: 130px;\n  margin: auto;\n}\n.cards-container .paragraph[data-v-49a000d2] {\n  max-width: 270px;\n  margin: 12px auto;\n}\n.cards-container .card[data-v-49a000d2] {\n  max-width: 320px;\n  width: 100%;\n  margin: auto;\n}\n@media (max-width: 1200px) {\n.serv-wrapper[data-v-49a000d2] {\n    padding: 20px;\n}\n}\n@media (max-width: 1000px) {\n.serv-wrapper[data-v-49a000d2] {\n    padding: 20px;\n}\n.serv-wrapper .row[data-v-49a000d2] {\n    justify-content: center;\n}\n.serv-wrapper .card[data-v-49a000d2] {\n    margin: 10px;\n}\n}", ""]);
 
 // exports
 
@@ -7067,7 +7131,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".hero-wrapper[data-v-3e7e2b6d] {\n  width: 100%;\n  padding: 0 0 80px 0;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  max-width: 1100px;\n  margin: auto;\n}\n.hero-wrapper-inner-left[data-v-3e7e2b6d] {\n  padding-top: 80px;\n}\n.hero-wrapper-inner-left-content[data-v-3e7e2b6d] {\n  max-width: 600px;\n  background: #1c3956;\n  padding: 20px;\n  border-radius: 12px;\n  color: #FFFFFF;\n  box-shadow: 10px 20px 55px 17px rgba(0, 0, 0, 0.15);\n}\n.hero-wrapper-inner-left-content h1[data-v-3e7e2b6d] {\n  font-family: \"Roboto\", sans-serif;\n}\n.hero-wrapper-inner-left-content p[data-v-3e7e2b6d] {\n  color: #FFFFFF;\n}\n.hero-wrapper-inner-left-content .inverted-link[data-v-3e7e2b6d] {\n  padding: 5px 22px;\n  border-radius: 12px;\n  background: #FFFFFF;\n  display: inline-block;\n  box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;\n}\n.hero-wrapper-inner-left-content .inverted-link i[data-v-3e7e2b6d] {\n  display: inline-block;\n  transform: translateY(4px);\n  font-size: 17px;\n  margin-left: 5px;\n}\n.hero-wrapper-inner-right img[data-v-3e7e2b6d] {\n  max-width: 350px;\n}", ""]);
+exports.push([module.i, ".hero-wrapper[data-v-3e7e2b6d] {\n  width: 100%;\n  padding: 0 0 80px 0;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  max-width: 1100px;\n  margin: auto;\n}\n.hero-wrapper-inner-left[data-v-3e7e2b6d] {\n  padding-top: 100px;\n  z-index: 1;\n}\n.hero-wrapper-inner-left-content[data-v-3e7e2b6d] {\n  max-width: 600px;\n  background: #1c3956;\n  padding: 20px;\n  border-radius: 12px;\n  color: #FFFFFF;\n  box-shadow: 10px 20px 55px 17px rgba(0, 0, 0, 0.15);\n}\n.hero-wrapper-inner-left-content h1[data-v-3e7e2b6d] {\n  font-family: \"Roboto\", sans-serif;\n}\n.hero-wrapper-inner-left-content p[data-v-3e7e2b6d] {\n  color: #FFFFFF;\n}\n.hero-wrapper-inner-left-content .inverted-link[data-v-3e7e2b6d] {\n  padding: 5px 22px;\n  border-radius: 12px;\n  background: #FFFFFF;\n  display: inline-block;\n  box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;\n}\n.hero-wrapper-inner-left-content .inverted-link i[data-v-3e7e2b6d] {\n  display: inline-block;\n  transform: translateY(4px);\n  font-size: 17px;\n  margin-left: 5px;\n}\n.hero-wrapper-inner-right img[data-v-3e7e2b6d] {\n  max-width: 350px;\n}\n@media (max-width: 690px) {\n.hero-wrapper[data-v-3e7e2b6d] {\n    overflow: hidden;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n    min-width: 634px;\n}\n}\n@media (max-width: 690px) {\n.hero-wrapper[data-v-3e7e2b6d] {\n    overflow: unset;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n    min-width: unset;\n}\n.hero-wrapper-inner-right[data-v-3e7e2b6d] {\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -7086,7 +7150,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".provide[data-v-692d67e5] {\n  width: 100%;\n  margin-top: 50px;\n}\n.provide-wrapper[data-v-692d67e5] {\n  max-width: 1100px;\n  width: 100%;\n  margin: auto;\n  display: flex;\n  justify-content: space-between;\n}\n.provide-wrapper-left[data-v-692d67e5] {\n  margin-right: 16px;\n}\n.provide-wrapper-left h1[data-v-692d67e5] {\n  font-size: 26px;\n  max-width: 175px;\n  border-bottom: 3px solid #00427b;\n}\n.provide-wrapper-left p[data-v-692d67e5] {\n  font-size: 18px;\n  max-width: 600px;\n  color: #616161;\n}\n.provide-wrapper-left-points[data-v-692d67e5] {\n  max-width: 500px;\n  margin-top: 24px;\n}\n.provide-wrapper-left-points-item[data-v-692d67e5] {\n  margin-bottom: 20px;\n}\n.provide-wrapper-left-points-item-head[data-v-692d67e5] {\n  font-size: 20px;\n  line-height: 20px;\n  display: flex;\n}\n.provide-wrapper-left-points-item-head i[data-v-692d67e5] {\n  color: #31a900;\n  display: block;\n  line-height: 19px;\n  margin-right: 5px;\n}\n.provide-wrapper-left-points-item-body[data-v-692d67e5] {\n  color: #616161;\n  font-size: 14px;\n  display: block;\n  padding-left: 30px;\n  margin-top: 10px;\n}\n.provide-wrapper-right[data-v-692d67e5] {\n  position: relative;\n}\n.provide-wrapper-right .desktop[data-v-692d67e5] {\n  display: block;\n  margin: 85px auto 0;\n}\n.provide-wrapper-right .lottie-player[data-v-692d67e5] {\n  position: absolute;\n  top: 100px;\n  left: 13px;\n}", ""]);
+exports.push([module.i, ".provide[data-v-692d67e5] {\n  width: 100%;\n  margin-top: 50px;\n}\n.provide-wrapper[data-v-692d67e5] {\n  max-width: 1100px;\n  width: 100%;\n  margin: auto;\n  display: flex;\n  justify-content: space-between;\n}\n.provide-wrapper-left[data-v-692d67e5] {\n  margin-right: 16px;\n}\n.provide-wrapper-left h1[data-v-692d67e5] {\n  font-size: 26px;\n  max-width: 175px;\n  border-bottom: 3px solid #00427b;\n}\n.provide-wrapper-left p[data-v-692d67e5] {\n  font-size: 18px;\n  max-width: 600px;\n  color: #616161;\n}\n.provide-wrapper-left-points[data-v-692d67e5] {\n  max-width: 500px;\n  margin-top: 24px;\n}\n.provide-wrapper-left-points-item[data-v-692d67e5] {\n  margin-bottom: 20px;\n}\n.provide-wrapper-left-points-item-head[data-v-692d67e5] {\n  font-size: 20px;\n  line-height: 20px;\n  display: flex;\n}\n.provide-wrapper-left-points-item-head i[data-v-692d67e5] {\n  color: #31a900;\n  display: block;\n  line-height: 19px;\n  margin-right: 5px;\n}\n.provide-wrapper-left-points-item-body[data-v-692d67e5] {\n  color: #616161;\n  font-size: 14px;\n  display: block;\n  padding-left: 30px;\n  margin-top: 10px;\n}\n.provide-wrapper-right .desktop[data-v-692d67e5] {\n  display: block;\n}\n.provide-wrapper-right .lottie-player[data-v-692d67e5] {\n  position: absolute;\n  top: 16px;\n  left: 13px;\n}\n.provide-wrapper-right .image-container[data-v-692d67e5] {\n  position: relative;\n  margin: 85px auto 0;\n}\n@media (max-width: 1150px) {\n.provide-wrapper[data-v-692d67e5] {\n    margin: 0;\n    padding: 0 20px;\n}\n}\n@media (max-width: 992px) {\n.provide-wrapper[data-v-692d67e5] {\n    flex-direction: column;\n}\n.provide-wrapper-right .image-container[data-v-692d67e5] {\n    max-width: 450px;\n}\n}\n@media (max-width: 490px) {\n.provide-wrapper-right[data-v-692d67e5] {\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -7124,7 +7188,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".nav-logo {\n  position: relative;\n  width: 139px;\n  padding: 0;\n}\n.nav-logo-container {\n  width: 160px;\n  height: 160px;\n  border-radius: 50%;\n  position: absolute;\n  top: -55px;\n  left: -28px;\n  background: #FFF;\n  z-index: 1;\n}\n.nav-logo-image {\n  position: absolute;\n  width: 120px;\n  top: 36px;\n  left: 20px;\n}\n.custom-nav {\n  box-shadow: 12px 1px 16px rgba(0, 0, 0, 0.15);\n}\n.custom-nav .navbar-text {\n  color: #151B54;\n  cursor: default;\n}\n.shadow-for-left-circle {\n  width: 160px;\n  height: 160px;\n  border-radius: 50%;\n  position: absolute;\n  top: -55px;\n  left: -28px;\n  z-index: -1;\n  box-shadow: 10px 6px 23px rgba(0, 0, 0, 0.15);\n}\n.router-link-active {\n  color: #151B54 !important;\n}", ""]);
+exports.push([module.i, ".nav-logo {\n  position: relative;\n  width: 139px;\n  padding: 0;\n}\n.nav-logo-container {\n  width: 160px;\n  height: 160px;\n  border-radius: 50%;\n  position: absolute;\n  top: -55px;\n  left: -28px;\n  background: #FFF;\n  z-index: 1;\n}\n.nav-logo-image {\n  position: absolute;\n  width: 120px;\n  top: 36px;\n  left: 20px;\n}\n.custom-nav {\n  box-shadow: 12px 1px 16px rgba(0, 0, 0, 0.15);\n}\n.custom-nav .navbar-text {\n  color: #151B54;\n  cursor: default;\n}\n.shadow-for-left-circle {\n  width: 160px;\n  height: 160px;\n  border-radius: 50%;\n  position: absolute;\n  top: -55px;\n  left: -28px;\n  z-index: -1;\n  box-shadow: 10px 6px 23px rgba(0, 0, 0, 0.15);\n}\n.router-link-active {\n  color: #151B54 !important;\n}\n@media (max-width: 992px) {\nul {\n    margin-top: 80px;\n}\n}", ""]);
 
 // exports
 
@@ -7143,7 +7207,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".contact[data-v-7a7a8938] {\n  margin-top: 80px;\n}", ""]);
+exports.push([module.i, ".contact[data-v-7a7a8938] {\n  margin-top: 80px;\n  width: 100%;\n}\n.contact-inner[data-v-7a7a8938] {\n  max-width: 1100px;\n  margin: 0 auto 50px;\n  display: flex;\n}\n.contact-inner-left[data-v-7a7a8938] {\n  max-width: 600px;\n  margin-right: 30px;\n}\n.contact-inner-left-form[data-v-7a7a8938] {\n  border: 1px solid rgba(82, 103, 119, 0.16);\n  box-shadow: 0 5px 10px 3px rgba(46, 91, 255, 0.07);\n}\n.contact-inner-right .top h3[data-v-7a7a8938] {\n  display: block;\n  max-width: 400px;\n}\n.contact-inner-right .bottom .head[data-v-7a7a8938] {\n  font-family: \"Roboto\", sans-serif;\n}\n.contact-inner-right .bottom p[data-v-7a7a8938] {\n  margin: 0;\n}\n.contact-inner-right .bottom .contact-link[data-v-7a7a8938] {\n  display: block;\n}\n.contact-inner-right .bottom .material-icons[data-v-7a7a8938] {\n  font-size: 18px;\n  transform: translateY(6px);\n  display: inline-block;\n}\n.contact-inner-right .bottom .contact-card[data-v-7a7a8938] {\n  border: 1px solid rgba(82, 103, 119, 0.16);\n  padding: 7px;\n  border-radius: 5px;\n  background-image: url(\"/images/image.jpg\");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  position: relative;\n}\n.contact-inner-right .bottom .contact-card .card-logo-image[data-v-7a7a8938] {\n  position: absolute;\n  right: 10px;\n  top: 10px;\n  width: 50px;\n  height: 40px;\n}", ""]);
 
 // exports
 
@@ -7162,7 +7226,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".speciality[data-v-793f7d69] {\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: auto auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n}\n.speciality-upper .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: -1;\n  width: 100%;\n  -webkit-animation: 1s widthAnimation-data-v-793f7d69 ease;\n          animation: 1s widthAnimation-data-v-793f7d69 ease;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n@-webkit-keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}", ""]);
+exports.push([module.i, ".speciality[data-v-793f7d69] {\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: auto auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n}\n.speciality-upper .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: -1;\n  width: 100%;\n  -webkit-animation: 1s widthAnimation-data-v-793f7d69 ease;\n          animation: 1s widthAnimation-data-v-793f7d69 ease;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n@-webkit-keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@media (max-width: 1140px) {\n.speciality[data-v-793f7d69] {\n    padding: 0 20px;\n}\n}", ""]);
 
 // exports
 
@@ -39358,7 +39422,7 @@ var render = function() {
               "router-link",
               {
                 staticClass: "btn btn-primary",
-                attrs: { to: "/", type: "button" }
+                attrs: { to: "/contact", type: "button" }
               },
               [_vm._v("Arrange a meeting")]
             )
@@ -39454,8 +39518,70 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "contact-us-form__wrapper__left__heading" }, [
+          _c("span", [_vm._v("Ready to take the next steps?")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "subtext" }, [
+            _vm._v("The truth is waiting...")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
         _c("form", { attrs: { action: "/action_page.php" } }, [
-          _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
+          _c("label", { staticClass: "head-label" }, [
+            _vm._v("Where do you need tests done?")
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-check form-check-inline" }, [
+            _c("input", {
+              staticClass: "form-check-input",
+              attrs: {
+                type: "radio",
+                name: "area",
+                id: "inlineRadio2",
+                value: "cpt"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "form-check-label",
+                attrs: { for: "inlineRadio2" }
+              },
+              [_vm._v("Mosselbay / George")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-check form-check-inline" }, [
+            _c("input", {
+              staticClass: "form-check-input",
+              attrs: {
+                type: "radio",
+                name: "area",
+                id: "inlineRadio1",
+                value: "jhb"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "form-check-label",
+                attrs: { for: "inlineRadio1" }
+              },
+              [_vm._v("Johannesburg")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("label", { staticClass: "head-label", attrs: { for: "name" } }, [
+            _vm._v("Name")
+          ]),
           _vm._v(" "),
           _c("input", {
             attrs: {
@@ -39466,9 +39592,11 @@ var staticRenderFns = [
             }
           }),
           _vm._v(" "),
-          _c("label", { attrs: { for: "contact_dets" } }, [
-            _vm._v("Email Or Cellphone number")
-          ]),
+          _c(
+            "label",
+            { staticClass: "head-label", attrs: { for: "contact_dets" } },
+            [_vm._v("Email Or Cellphone number")]
+          ),
           _vm._v(" "),
           _c("input", {
             attrs: {
@@ -39479,7 +39607,7 @@ var staticRenderFns = [
             }
           }),
           _vm._v(" "),
-          _c("label", { attrs: { for: "test" } }, [
+          _c("label", { staticClass: "head-label", attrs: { for: "test" } }, [
             _vm._v("Type of Test you would like to enquire about")
           ]),
           _vm._v(" "),
@@ -39495,7 +39623,11 @@ var staticRenderFns = [
             _c("option", { attrs: { value: "other" } }, [_vm._v("Other")])
           ]),
           _vm._v(" "),
-          _c("label", { attrs: { for: "message" } }, [_vm._v("Your message")]),
+          _c(
+            "label",
+            { staticClass: "head-label", attrs: { for: "message" } },
+            [_vm._v("Your message")]
+          ),
           _vm._v(" "),
           _c("textarea", {
             attrs: {
@@ -39960,32 +40092,35 @@ var render = function() {
     _c("div", { staticClass: "provide-wrapper" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "provide-wrapper-right" },
-        [
-          _c("lottie-player", {
-            staticClass: "lottie-player",
-            staticStyle: { width: "424px", height: "239px" },
-            attrs: {
-              src: "https://assets1.lottiefiles.com/packages/lf20_fnQHkf.json",
-              background: "transparent",
-              speed: "1",
-              loop: "",
-              autoplay: ""
-            }
-          }),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "desktop",
-            attrs: {
-              src: "/images/desktop.png",
-              alt: "Heart beat monitoring with SKY Agency polygraphs"
-            }
-          })
-        ],
-        1
-      )
+      _c("div", { staticClass: "provide-wrapper-right" }, [
+        _c(
+          "div",
+          { staticClass: "image-container" },
+          [
+            _c("lottie-player", {
+              staticClass: "lottie-player",
+              staticStyle: { width: "424px", height: "239px" },
+              attrs: {
+                src:
+                  "https://assets1.lottiefiles.com/packages/lf20_fnQHkf.json",
+                background: "transparent",
+                speed: "1",
+                loop: "",
+                autoplay: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "desktop",
+              attrs: {
+                src: "/images/desktop.png",
+                alt: "Heart beat monitoring with SKY Agency polygraphs"
+              }
+            })
+          ],
+          1
+        )
+      ])
     ])
   ])
 }
@@ -40308,9 +40443,125 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contact" }, [_c("ContactForm")], 1)
+  return _c("div", { staticClass: "contact" }, [
+    _c("div", { staticClass: "contact-inner" }, [
+      _c("div", { staticClass: "contact-inner-left" }, [
+        _c(
+          "div",
+          { staticClass: "contact-inner-left-form" },
+          [_c("ContactForm")],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "contact-inner-right" }, [
+      _c("div", { staticClass: "contact-inner-right-contact" }, [
+        _c("div", { staticClass: "top" }, [
+          _c("h3", {}, [
+            _vm._v(
+              "\n                        Feel free to give us a call, sms or whatsapp\n                    "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("div", { staticClass: "bottom" }, [
+          _c("div", { staticClass: "contact-card" }, [
+            _c("img", {
+              staticClass: "card-logo-image",
+              attrs: { src: "/images/logo.png", alt: "Sky Agency Logo, George" }
+            }),
+            _vm._v(" "),
+            _c("h4", { staticClass: "head" }, [_vm._v("Lynette Heynz")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Mosselbay / George")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "contact-link",
+                attrs: { href: "mailto: lynette@skyagency.co.za" }
+              },
+              [
+                _c("span", { staticClass: "material-icons" }, [
+                  _vm._v("email")
+                ]),
+                _vm._v(" lynette@skyagency.co.za\n                        ")
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "contact-link",
+                attrs: { href: "tel: +27 12 1231234" }
+              },
+              [
+                _c("span", { staticClass: "material-icons" }, [_vm._v("call")]),
+                _vm._v(" +27 12 123 1234\n                        ")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { staticClass: "contact-card" }, [
+            _c("img", {
+              staticClass: "card-logo-image",
+              attrs: { src: "/images/logo.png", alt: "Sky Agency Logo, George" }
+            }),
+            _vm._v(" "),
+            _c("h4", { staticClass: "head" }, [_vm._v("Paul Smuts")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Johannesburg")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "contact-link",
+                attrs: { href: "mailto: lynette@skyagency.co.za" }
+              },
+              [
+                _c("span", { staticClass: "material-icons" }, [
+                  _vm._v("email")
+                ]),
+                _vm._v(" paul@skyagency.co.za\n                        ")
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "contact-link",
+                attrs: { href: "tel: +27 12 1231234" }
+              },
+              [
+                _c("span", { staticClass: "material-icons" }, [_vm._v("call")]),
+                _vm._v(" +27 12 123 1234\n                        ")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                        We aim to respond ASAP and as such in usual circumstances we should be able to reply within 24 hours.\n                    "
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

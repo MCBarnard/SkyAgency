@@ -11,7 +11,7 @@
                 <span><i class="material-icons">keyboard_arrow_right</i> Incident Investigation</span>
                 <span><i class="material-icons">keyboard_arrow_right</i> Identifying sexual harassment</span>
                 <div class="buttons-wrapper">
-                    <router-link to="/" type="button" class="btn btn-primary">Arrange a meeting</router-link>
+                    <router-link to="/contact" type="button" class="btn btn-primary">Arrange a meeting</router-link>
                 </div>
             </div>
             <div class="call-to-action-content-right">
@@ -39,12 +39,14 @@ export default {
         position: absolute;
         width: 100%;
         top: 0;
+        left: 0;
     }
     .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
+        left: 0;
         background: #00427b;
         background: linear-gradient(-90deg, rgb(0 66 123 / 80%) 10%, rgb(0 23 64 / 80%) 75%);
     }
@@ -84,16 +86,81 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 16px;
+                color: #FFFFFF;
 
-                a {
+                .btn-primary {
                     text-shadow: unset;
-                    color: #FFFFFF;
+                    color: #FFFFFF!important;
                 }
             }
         }
 
         &-right {
             z-index: 1;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .call-to-action {
+        padding: 80px 20px 0;
+    }
+}
+@media (max-width: 992px){
+    .call-to-action {
+        padding: 100px 20px 0;
+        &-content {
+            &-left {
+                h1 {
+                    font-size: 31px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+                span {
+                    font-size: 16px;
+                    margin-left: 1rem;
+
+                    i {
+                        transform: translateY(4px);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .call-to-action {
+        padding: 100px 20px 50px;
+
+        .background-report {
+            display: none;
+        }
+        &-content {
+            &-right {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .call-to-action {
+        &-content {
+            &-left {
+
+                h1 {
+                    font-size: 26px;
+                }
+            }
+
+            &-right {
+                display: none;
+            }
         }
     }
 }
