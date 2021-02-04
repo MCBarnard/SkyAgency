@@ -8,7 +8,7 @@
                 </p>
                 <div class="provide-wrapper-left-points">
                     <div class="provide-wrapper-left-points-item">
-                        <span class="provide-wrapper-left-points-item-head"><i class="material-icons">check</i>  Criminal charges</span>
+                        <span class="provide-wrapper-left-points-item-head"><i class="material-icons">check</i>  Investigations</span>
                         <span class="provide-wrapper-left-points-item-body">
                             The individual should be informed that the examination is voluntarily. Polygraph results can be utilized
                             in labour disputes and disciplinary enquiries. The CCMA uses polygraph results as a forensic tool.

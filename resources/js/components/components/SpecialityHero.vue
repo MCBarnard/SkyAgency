@@ -33,7 +33,7 @@ export default {
 <style scoped lang="scss">
     .hero-wrapper {
         width: 100%;
-        padding: 0 0 80px 0;
+        padding:  0;
 
         &-inner {
             display: flex;

@@ -1,5 +1,5 @@
 <template>
-    <div class="speciality-card">
+    <div @click="$emit('redirect')" class="speciality-card">
         <div class="speciality-card-inner">
             <div class="speciality-card-inner-content">
                 <h3>
@@ -73,7 +73,6 @@ export default {
                 right: -5px;
                 width: 50px;
                 height: 150px;
-                background: chartreuse;
                 display: flex;
                 transform: rotate(45deg);
 
@@ -105,6 +104,19 @@ export default {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1050px) {
+    .speciality-card {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 792px) {
+    .speciality-card {
+        max-width: unset;
+        margin: 40px 0;
     }
 }
 </style>

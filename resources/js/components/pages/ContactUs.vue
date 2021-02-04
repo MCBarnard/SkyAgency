@@ -17,7 +17,7 @@
                     <div class="bottom">
                         <div class="contact-card">
                             <img src="/images/logo.png" alt="Sky Agency Logo, George" class="card-logo-image">
-                            <h4 class="head">Lynette Heynz</h4>
+                            <h4 class="head">Lynette Heyns</h4>
                             <p>Mosselbay / George</p>
                             <a class="contact-link" href="mailto: lynette@skyagency.co.za">
                                 <span class="material-icons">email</span> lynette@skyagency.co.za
@@ -57,6 +57,11 @@ export default {
     name: "ContactUs",
     components: {
         ContactForm
+    },
+    mounted () {
+        if(this.$route.params['data']) {
+            console.log(this.$route.params['data'])
+        }
     }
 }
 </script>

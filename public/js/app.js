@@ -2238,6 +2238,43 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/VettingCard.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "VettingCard",
+  props: {
+    routeLink: {
+      type: String
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/WeProvide.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/WeProvide.vue?vue&type=script&lang=js& ***!
@@ -2470,6 +2507,11 @@ __webpack_require__.r(__webpack_exports__);
   name: "ContactUs",
   components: {
     ContactForm: _components_ContactForm__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  mounted: function mounted() {
+    if (this.$route.params['data']) {
+      console.log(this.$route.params['data']);
+    }
   }
 });
 
@@ -2523,7 +2565,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SpecialityCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/SpecialityCard */ "./resources/js/components/components/SpecialityCard.vue");
-/* harmony import */ var _components_SpecialityHero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SpecialityHero */ "./resources/js/components/components/SpecialityHero.vue");
+/* harmony import */ var _components_VettingCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/VettingCard */ "./resources/js/components/components/VettingCard.vue");
+/* harmony import */ var _components_SpecialityHero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SpecialityHero */ "./resources/js/components/components/SpecialityHero.vue");
 //
 //
 //
@@ -2565,13 +2608,79 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SpecialityServices",
   components: {
     SpecialityCard: _components_SpecialityCard__WEBPACK_IMPORTED_MODULE_0__["default"],
-    SpecialityHero: _components_SpecialityHero__WEBPACK_IMPORTED_MODULE_1__["default"]
+    SpecialityHero: _components_SpecialityHero__WEBPACK_IMPORTED_MODULE_2__["default"],
+    VettingCard: _components_VettingCard__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  methods: {
+    goToContact: function goToContact(topic) {
+      this.$router.push({
+        name: 'contact',
+        params: {
+          data: topic
+        }
+      });
+    }
   }
 });
 
@@ -7112,7 +7221,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".speciality-card[data-v-62e45b83] {\n  max-width: 320px;\n  width: 100%;\n  cursor: pointer;\n  outline: 1px solid rgba(128, 128, 128, 0);\n  position: relative;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  transition: all 0.2s ease;\n}\n.speciality-card-inner[data-v-62e45b83] {\n  padding: 20px;\n}\n.speciality-card-inner-content h3[data-v-62e45b83] {\n  font-size: 22px;\n  display: inline-block;\n}\n.speciality-card-inner-content h3 div[data-v-62e45b83] {\n  width: 0;\n  height: 3px;\n  background: #1b1e21;\n  border-radius: 5px;\n  transition: all 0.2s ease;\n}\n.speciality-card-inner-icons[data-v-62e45b83] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  z-index: -1;\n}\n.speciality-card-inner-icons .stripes[data-v-62e45b83] {\n  position: absolute;\n  bottom: -60px;\n  right: -5px;\n  width: 50px;\n  height: 150px;\n  background: chartreuse;\n  display: flex;\n  transform: rotate(45deg);\n}\n.speciality-card-inner-icons .stripes-blue[data-v-62e45b83] {\n  width: 80%;\n  height: 100%;\n  background: #2c3c5a;\n}\n.speciality-card-inner-icons .stripes-grey[data-v-62e45b83] {\n  width: 20%;\n  height: 100%;\n  background: #8c8c8c;\n}\n.speciality-card[data-v-62e45b83]:hover {\n  outline: 1px solid rgba(149, 155, 199, 0.5);\n  transform: translateY(-10px);\n}\n.speciality-card:hover .speciality-card-inner-content h3 div[data-v-62e45b83] {\n  width: 100%;\n}", ""]);
+exports.push([module.i, ".speciality-card[data-v-62e45b83] {\n  max-width: 320px;\n  width: 100%;\n  cursor: pointer;\n  outline: 1px solid rgba(128, 128, 128, 0);\n  position: relative;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  transition: all 0.2s ease;\n}\n.speciality-card-inner[data-v-62e45b83] {\n  padding: 20px;\n}\n.speciality-card-inner-content h3[data-v-62e45b83] {\n  font-size: 22px;\n  display: inline-block;\n}\n.speciality-card-inner-content h3 div[data-v-62e45b83] {\n  width: 0;\n  height: 3px;\n  background: #1b1e21;\n  border-radius: 5px;\n  transition: all 0.2s ease;\n}\n.speciality-card-inner-icons[data-v-62e45b83] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  z-index: -1;\n}\n.speciality-card-inner-icons .stripes[data-v-62e45b83] {\n  position: absolute;\n  bottom: -60px;\n  right: -5px;\n  width: 50px;\n  height: 150px;\n  display: flex;\n  transform: rotate(45deg);\n}\n.speciality-card-inner-icons .stripes-blue[data-v-62e45b83] {\n  width: 80%;\n  height: 100%;\n  background: #2c3c5a;\n}\n.speciality-card-inner-icons .stripes-grey[data-v-62e45b83] {\n  width: 20%;\n  height: 100%;\n  background: #8c8c8c;\n}\n.speciality-card[data-v-62e45b83]:hover {\n  outline: 1px solid rgba(149, 155, 199, 0.5);\n  transform: translateY(-10px);\n}\n.speciality-card:hover .speciality-card-inner-content h3 div[data-v-62e45b83] {\n  width: 100%;\n}\n@media (max-width: 1050px) {\n.speciality-card[data-v-62e45b83] {\n    margin: 0 20px;\n}\n}\n@media (max-width: 792px) {\n.speciality-card[data-v-62e45b83] {\n    max-width: unset;\n    margin: 40px 0;\n}\n}", ""]);
 
 // exports
 
@@ -7131,7 +7240,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".hero-wrapper[data-v-3e7e2b6d] {\n  width: 100%;\n  padding: 0 0 80px 0;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  max-width: 1100px;\n  margin: auto;\n}\n.hero-wrapper-inner-left[data-v-3e7e2b6d] {\n  padding-top: 100px;\n  z-index: 1;\n}\n.hero-wrapper-inner-left-content[data-v-3e7e2b6d] {\n  max-width: 600px;\n  background: #1c3956;\n  padding: 20px;\n  border-radius: 12px;\n  color: #FFFFFF;\n  box-shadow: 10px 20px 55px 17px rgba(0, 0, 0, 0.15);\n}\n.hero-wrapper-inner-left-content h1[data-v-3e7e2b6d] {\n  font-family: \"Roboto\", sans-serif;\n}\n.hero-wrapper-inner-left-content p[data-v-3e7e2b6d] {\n  color: #FFFFFF;\n}\n.hero-wrapper-inner-left-content .inverted-link[data-v-3e7e2b6d] {\n  padding: 5px 22px;\n  border-radius: 12px;\n  background: #FFFFFF;\n  display: inline-block;\n  box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;\n}\n.hero-wrapper-inner-left-content .inverted-link i[data-v-3e7e2b6d] {\n  display: inline-block;\n  transform: translateY(4px);\n  font-size: 17px;\n  margin-left: 5px;\n}\n.hero-wrapper-inner-right img[data-v-3e7e2b6d] {\n  max-width: 350px;\n}\n@media (max-width: 690px) {\n.hero-wrapper[data-v-3e7e2b6d] {\n    overflow: hidden;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n    min-width: 634px;\n}\n}\n@media (max-width: 690px) {\n.hero-wrapper[data-v-3e7e2b6d] {\n    overflow: unset;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n    min-width: unset;\n}\n.hero-wrapper-inner-right[data-v-3e7e2b6d] {\n    display: none;\n}\n}", ""]);
+exports.push([module.i, ".hero-wrapper[data-v-3e7e2b6d] {\n  width: 100%;\n  padding: 0;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  max-width: 1100px;\n  margin: auto;\n}\n.hero-wrapper-inner-left[data-v-3e7e2b6d] {\n  padding-top: 100px;\n  z-index: 1;\n}\n.hero-wrapper-inner-left-content[data-v-3e7e2b6d] {\n  max-width: 600px;\n  background: #1c3956;\n  padding: 20px;\n  border-radius: 12px;\n  color: #FFFFFF;\n  box-shadow: 10px 20px 55px 17px rgba(0, 0, 0, 0.15);\n}\n.hero-wrapper-inner-left-content h1[data-v-3e7e2b6d] {\n  font-family: \"Roboto\", sans-serif;\n}\n.hero-wrapper-inner-left-content p[data-v-3e7e2b6d] {\n  color: #FFFFFF;\n}\n.hero-wrapper-inner-left-content .inverted-link[data-v-3e7e2b6d] {\n  padding: 5px 22px;\n  border-radius: 12px;\n  background: #FFFFFF;\n  display: inline-block;\n  box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;\n}\n.hero-wrapper-inner-left-content .inverted-link i[data-v-3e7e2b6d] {\n  display: inline-block;\n  transform: translateY(4px);\n  font-size: 17px;\n  margin-left: 5px;\n}\n.hero-wrapper-inner-right img[data-v-3e7e2b6d] {\n  max-width: 350px;\n}\n@media (max-width: 690px) {\n.hero-wrapper[data-v-3e7e2b6d] {\n    overflow: hidden;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n    min-width: 634px;\n}\n}\n@media (max-width: 690px) {\n.hero-wrapper[data-v-3e7e2b6d] {\n    overflow: unset;\n}\n.hero-wrapper-inner[data-v-3e7e2b6d] {\n    min-width: unset;\n}\n.hero-wrapper-inner-right[data-v-3e7e2b6d] {\n    display: none;\n}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".speciality-card[data-v-06836b35] {\n  width: 560px;\n  position: relative;\n}\n.speciality-card-inner[data-v-06836b35] {\n  padding: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-card-inner-image[data-v-06836b35] {\n  width: 50px;\n  height: 50px;\n  border: 1px solid #1b1e21;\n  border-radius: 50%;\n  margin-right: 1rem;\n  justify-content: center;\n  text-align: center;\n  line-height: 63px;\n}\n.speciality-card-inner-content[data-v-06836b35] {\n  max-width: 450px;\n}\n.speciality-card-inner-content h3[data-v-06836b35] {\n  font-size: 22px;\n  display: inline-block;\n}\n.speciality-card-inner-content h3 div[data-v-06836b35] {\n  width: 0;\n  height: 3px;\n  background: #1b1e21;\n  border-radius: 5px;\n  transition: all 0.2s ease;\n}\n@media (max-width: 1050px) {\n.speciality-card[data-v-06836b35] {\n    margin: 0 20px;\n    max-width: unset;\n}\n.speciality-card-inner-content[data-v-06836b35] {\n    max-width: 400px;\n}\n.speciality-card-inner-content p[data-v-06836b35] {\n    font-size: 18px;\n}\n}\n@media (max-width: 992px) {\n.speciality-card[data-v-06836b35] {\n    width: 100%;\n    margin: 10px auto;\n}\n.speciality-card-inner-image[data-v-06836b35] {\n    min-width: 50px;\n}\n.speciality-card-inner-content[data-v-06836b35] {\n    max-width: 740px;\n}\n}\n@media (max-width: 792px) {\n.speciality-card[data-v-06836b35] {\n    max-width: unset;\n    margin: 10px 0;\n}\n.speciality-card-inner[data-v-06836b35] {\n    padding: 0;\n}\n}\n@media (max-width: 380px) {\n.speciality-card-inner-content h3[data-v-06836b35] {\n    font-size: 18px;\n}\n.speciality-card-inner-content p[data-v-06836b35] {\n    font-size: 16px;\n}\n}", ""]);
 
 // exports
 
@@ -7226,7 +7354,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".speciality[data-v-793f7d69] {\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: auto auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n}\n.speciality-upper .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: -1;\n  width: 100%;\n  -webkit-animation: 1s widthAnimation-data-v-793f7d69 ease;\n          animation: 1s widthAnimation-data-v-793f7d69 ease;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n@-webkit-keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@media (max-width: 1140px) {\n.speciality[data-v-793f7d69] {\n    padding: 0 20px;\n}\n}", ""]);
+exports.push([module.i, ".speciality[data-v-793f7d69] {\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: 3rem auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n}\n.speciality-upper .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: -1;\n  width: 100%;\n  -webkit-animation: 1s widthAnimation-data-v-793f7d69 ease;\n          animation: 1s widthAnimation-data-v-793f7d69 ease;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality .section-lower[data-v-793f7d69] {\n  width: 100%;\n  background: #eaeaea;\n  margin-top: 5rem;\n  padding: 5rem 0;\n}\n.speciality .section-lower button[data-v-793f7d69] {\n  width: 50%;\n}\n.speciality-lower[data-v-793f7d69] {\n  margin: auto;\n  max-width: 1100px;\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n  max-width: 500px;\n}\n.speciality-lower .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n  font-size: 2.25rem;\n}\n.speciality-lower .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: 0;\n  width: 60px;\n  -webkit-animation: 1s smallWidthAnimation-data-v-793f7d69 ease;\n          animation: 1s smallWidthAnimation-data-v-793f7d69 ease;\n}\n.speciality-lower h3[data-v-793f7d69], .speciality-lower p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality-lower p[data-v-793f7d69] {\n  margin-top: 8px;\n  display: block;\n  font-size: 24px;\n}\n.speciality-bottom[data-v-793f7d69] {\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-bottom .card-section[data-v-793f7d69] {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n}\n@-webkit-keyframes smallWidthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 60px;\n}\n}\n@keyframes smallWidthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 60px;\n}\n}\n@-webkit-keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@media (max-width: 1140px) {\n.speciality[data-v-793f7d69] {\n    padding: 0;\n}\n.speciality .section-lower[data-v-793f7d69] {\n    padding: 5rem 20px;\n    font-size: 18px;\n}\n.speciality-lower .heading[data-v-793f7d69] {\n    font-size: 30px;\n}\n.padding-wrapper[data-v-793f7d69] {\n    padding: 0 20px;\n}\n}\n@media (max-width: 1050px) {\n.speciality-inner[data-v-793f7d69] {\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n}\n.speciality-inner .spec-bot[data-v-793f7d69] {\n    margin: 40px 20px 0;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n    font-size: 24px;\n}\n.speciality-upper p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n    max-width: 380px;\n}\n.speciality-lower p[data-v-793f7d69] {\n    font-size: 20px;\n}\n}\n@media (max-width: 992px) {\n.speciality-lower[data-v-793f7d69] {\n    flex-direction: column;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n    max-width: unset;\n}\n.speciality-lower .text-container h2[data-v-793f7d69] {\n    max-width: 550px;\n}\n.speciality-lower .text-container p[data-v-793f7d69] {\n    max-width: 700px;\n}\n.speciality-lower .text-container button[data-v-793f7d69] {\n    margin-bottom: 2rem;\n}\n.speciality-bottom .card-section[data-v-793f7d69] {\n    width: 100%;\n}\n}\n@media (max-width: 792px) {\n.speciality-inner[data-v-793f7d69] {\n    flex-direction: column;\n}\n.speciality-inner .spec-bot[data-v-793f7d69] {\n    margin: 0;\n}\n}\n@media (max-width: 380px) {\n.speciality-upper .heading[data-v-793f7d69] {\n    font-size: 24px;\n}\n.speciality-upper p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container h2[data-v-793f7d69] {\n    font-size: 22px;\n}\n.speciality-lower .text-container p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container button[data-v-793f7d69] {\n    width: 100%;\n}\n}", ""]);
 
 // exports
 
@@ -38602,6 +38730,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/WeProvide.vue?vue&type=style&index=0&id=692d67e5&scoped=true&lang=scss&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/WeProvide.vue?vue&type=style&index=0&id=692d67e5&scoped=true&lang=scss& ***!
@@ -39970,17 +40128,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "speciality-card" }, [
-    _c("div", { staticClass: "speciality-card-inner" }, [
-      _c("div", { staticClass: "speciality-card-inner-content" }, [
-        _c("h3", [_vm._t("heading"), _vm._v(" "), _c("div")], 2),
+  return _c(
+    "div",
+    {
+      staticClass: "speciality-card",
+      on: {
+        click: function($event) {
+          return _vm.$emit("redirect")
+        }
+      }
+    },
+    [
+      _c("div", { staticClass: "speciality-card-inner" }, [
+        _c("div", { staticClass: "speciality-card-inner-content" }, [
+          _c("h3", [_vm._t("heading"), _vm._v(" "), _c("div")], 2),
+          _vm._v(" "),
+          _c("p", [_vm._t("paragraph")], 2)
+        ]),
         _vm._v(" "),
-        _c("p", [_vm._t("paragraph")], 2)
-      ]),
-      _vm._v(" "),
-      _vm._m(0)
-    ])
-  ])
+        _vm._m(0)
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -40073,6 +40242,45 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=template&id=06836b35&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/VettingCard.vue?vue&type=template&id=06836b35&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "speciality-card" }, [
+    _c("div", { staticClass: "speciality-card-inner" }, [
+      _c(
+        "div",
+        { staticClass: "speciality-card-inner-image" },
+        [_vm._t("icon")],
+        2
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "speciality-card-inner-content" }, [
+        _c("h3", [_vm._t("heading"), _vm._v(" "), _c("div")], 2),
+        _vm._v(" "),
+        _c("p", [_vm._t("paragraph")], 2)
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/WeProvide.vue?vue&type=template&id=692d67e5&scoped=true&":
 /*!***********************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/components/WeProvide.vue?vue&type=template&id=692d67e5&scoped=true& ***!
@@ -40142,7 +40350,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "provide-wrapper-left-points-item" }, [
           _c("span", { staticClass: "provide-wrapper-left-points-item-head" }, [
             _c("i", { staticClass: "material-icons" }, [_vm._v("check")]),
-            _vm._v("  Criminal charges")
+            _vm._v("  Investigations")
           ]),
           _vm._v(" "),
           _c("span", { staticClass: "provide-wrapper-left-points-item-body" }, [
@@ -40245,7 +40453,7 @@ var staticRenderFns = [
           _c("ul", { staticClass: "footer-links" }, [
             _c("li", [
               _c("a", { staticClass: "text-white" }, [
-                _vm._v("Lynette Heynz "),
+                _vm._v("Lynette Heyns "),
                 _c("i", [_vm._v("(George to Mossel Bay and surroundings)")])
               ])
             ]),
@@ -40482,7 +40690,7 @@ var staticRenderFns = [
               attrs: { src: "/images/logo.png", alt: "Sky Agency Logo, George" }
             }),
             _vm._v(" "),
-            _c("h4", { staticClass: "head" }, [_vm._v("Lynette Heynz")]),
+            _c("h4", { staticClass: "head" }, [_vm._v("Lynette Heyns")]),
             _vm._v(" "),
             _c("p", [_vm._v("Mosselbay / George")]),
             _vm._v(" "),
@@ -40619,92 +40827,259 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "speciality" },
-    [
-      _c("SpecialityHero"),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "speciality-inner" },
-        [
-          _c("SpecialityCard", {
-            scopedSlots: _vm._u([
-              {
-                key: "heading",
-                fn: function() {
-                  return [_vm._v("Periodic Screening")]
-                },
-                proxy: true
+  return _c("div", { staticClass: "speciality" }, [
+    _c(
+      "div",
+      { staticClass: "padding-wrapper" },
+      [
+        _c("SpecialityHero"),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "speciality-inner" },
+          [
+            _c("SpecialityCard", {
+              on: {
+                redirect: function($event) {
+                  return _vm.goToContact("periodic-screening")
+                }
               },
-              {
-                key: "paragraph",
-                fn: function() {
-                  return [
-                    _vm._v(
-                      "\n                Periodic screening or testing is most effect due to the prior knowledge of the test.\n                Employees are aware that they will be tested and prevents incidents from occurring, whilst also catching those whom are causing damage to your business.\n                Periodic screenings are most effective in protecting your company against loss of stock, malice, theft or corruption.\n            "
-                    )
-                  ]
+              scopedSlots: _vm._u([
+                {
+                  key: "heading",
+                  fn: function() {
+                    return [_vm._v("Periodic Screening")]
+                  },
+                  proxy: true
                 },
-                proxy: true
-              }
-            ])
-          }),
+                {
+                  key: "paragraph",
+                  fn: function() {
+                    return [
+                      _vm._v(
+                        "\n                Periodic screening or testing is most effect due to the prior knowledge of the test.\n                Employees are aware that they will be tested and prevents incidents from occurring, whilst also catching those whom are causing damage to your business.\n                Periodic screenings are most effective in protecting your company against loss of stock, malice, theft or corruption.\n            "
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            }),
+            _vm._v(" "),
+            _c("SpecialityCard", {
+              on: {
+                redirect: function($event) {
+                  return _vm.goToContact("pre-employment")
+                }
+              },
+              scopedSlots: _vm._u([
+                {
+                  key: "heading",
+                  fn: function() {
+                    return [_vm._v("Pre-Employment Check")]
+                  },
+                  proxy: true
+                },
+                {
+                  key: "paragraph",
+                  fn: function() {
+                    return [
+                      _vm._v(
+                        "\n                Find out what type of hire you are making before introducing undesired elements to your company.\n                Benefit from increased employee retention and reduction in costs associated with turnover (e.g. hiring and training costs).\n                This also improves productiveness in your company as it allows you to know what you can expect from individuals.\n            "
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            }),
+            _vm._v(" "),
+            _c("SpecialityCard", {
+              staticClass: "spec-bot",
+              on: {
+                redirect: function($event) {
+                  return _vm.goToContact("incident-investigation")
+                }
+              },
+              scopedSlots: _vm._u([
+                {
+                  key: "heading",
+                  fn: function() {
+                    return [_vm._v("Incident Investigation")]
+                  },
+                  proxy: true
+                },
+                {
+                  key: "paragraph",
+                  fn: function() {
+                    return [
+                      _vm._v(
+                        "\n                We are trained experts who will fight to give you the best and fastest results in any investigation. We work hand in hand with staff, managers and owners\n                to ensure we solve the situation and get written and tested statements from every person involved.\n                With our diligent and thorough questioning and investigative skills, confessions usually aren't far behind.\n            "
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            })
+          ],
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "section-lower" }, [
+      _c("div", { staticClass: "speciality-lower" }, [
+        _c("div", { staticClass: "text-container" }, [
+          _c("h2", { staticClass: "heading" }, [
+            _vm._v(
+              "Vetting Solutions that suite your needs and provides assurance"
+            )
+          ]),
           _vm._v(" "),
-          _c("SpecialityCard", {
-            scopedSlots: _vm._u([
-              {
-                key: "heading",
-                fn: function() {
-                  return [_vm._v("Pre-Employment Check")]
-                },
-                proxy: true
-              },
-              {
-                key: "paragraph",
-                fn: function() {
-                  return [
-                    _vm._v(
-                      "\n                Find out what type of hire you are making before introducing undesired elements to your company.\n                Benefit from increased employee retention and reduction in costs associated with turnover (e.g. hiring and training costs).\n                This also improves productiveness in your company as it allows you to know what you can expect from individuals.\n            "
-                    )
-                  ]
-                },
-                proxy: true
-              }
-            ])
-          }),
+          _c("p", [
+            _vm._v(
+              "\n                    The completion of pre-employment screening for staff and contractors,\n                    to a defined standard, is also the most effective way to evidence\n                    that an organisation resources possess the necessary qualifications,\n                    skills and qualities needed to fulfil the position.\n                "
+            )
+          ]),
           _vm._v(" "),
-          _c("SpecialityCard", {
-            scopedSlots: _vm._u([
-              {
-                key: "heading",
-                fn: function() {
-                  return [_vm._v("Incident Investigation")]
-                },
-                proxy: true
-              },
-              {
-                key: "paragraph",
-                fn: function() {
-                  return [
-                    _vm._v(
-                      "\n                We are trained experts who will fight to give you the best and fastest results in any investigation. We work hand in hand with staff, managers and owners\n                to ensure we solve the situation and get written and tested statements from every person involved.\n                With our diligent and thorough questioning and investigative skills, confessions usually aren't far behind.\n            "
-                    )
-                  ]
-                },
-                proxy: true
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-info d-block",
+              on: {
+                click: function($event) {
+                  return _vm.goToContact("vetting")
+                }
               }
-            ])
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
+            },
+            [_vm._v("Reach out")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "speciality-bottom" }, [
+          _c(
+            "div",
+            { staticClass: "card-section" },
+            [
+              _c("VettingCard", {
+                scopedSlots: _vm._u([
+                  {
+                    key: "icon",
+                    fn: function() {
+                      return [
+                        _c("span", { staticClass: "material-icons" }, [
+                          _vm._v(
+                            "\n                                search\n                            "
+                          )
+                        ])
+                      ]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "heading",
+                    fn: function() {
+                      return [_vm._v("Forensic Investigations")]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "paragraph",
+                    fn: function() {
+                      return [
+                        _vm._v(
+                          "\n                            We gather and analyse all crime-related physical evidence in order to help achieve your needs.\n                        "
+                        )
+                      ]
+                    },
+                    proxy: true
+                  }
+                ])
+              }),
+              _vm._v(" "),
+              _c("VettingCard", {
+                scopedSlots: _vm._u([
+                  {
+                    key: "icon",
+                    fn: function() {
+                      return [
+                        _c("span", { staticClass: "material-icons" }, [
+                          _vm._v(
+                            "\n                                check_box\n                            "
+                          )
+                        ])
+                      ]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "heading",
+                    fn: function() {
+                      return [_vm._v("Verification Services")]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "paragraph",
+                    fn: function() {
+                      return [
+                        _vm._v(
+                          "\n                            We help ensure that your products, processes and services reach the latest national and\n                            international standards as efficiently, effectively and timely as possible.\n                        "
+                        )
+                      ]
+                    },
+                    proxy: true
+                  }
+                ])
+              }),
+              _vm._v(" "),
+              _c("VettingCard", {
+                staticClass: "spec-bot",
+                scopedSlots: _vm._u([
+                  {
+                    key: "icon",
+                    fn: function() {
+                      return [
+                        _c("span", { staticClass: "material-icons" }, [
+                          _vm._v(
+                            "\n                                assignment\n                            "
+                          )
+                        ])
+                      ]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "heading",
+                    fn: function() {
+                      return [_vm._v("Fraud and Fictitious Business")]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "paragraph",
+                    fn: function() {
+                      return [
+                        _vm._v(
+                          "\n                            We works with consumers, private investigators and law enforcement officials to help investigate any fraud related issues.\n                        "
+                        )
+                      ]
+                    },
+                    proxy: true
+                  }
+                ])
+              })
+            ],
+            1
+          )
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -40712,11 +41087,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "speciality-upper" }, [
-      _c("h2", { staticClass: "heading" }, [_vm._v("What we specialize in")]),
+      _c("h2", { staticClass: "heading" }, [_vm._v("Polygraph Solutions")]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n            Not only do we provide conclusive results of polygraph tests,\n            but also a comprehensive report on each subject including reputation,\n            personal character traits, educational background, employment history\n            and a overall completed profile.\n        "
+          "\n                Not only do we provide conclusive results of polygraph tests,\n                but also a comprehensive report on each subject including reputation,\n                personal character traits, educational background, employment history\n                and a overall completed profile.\n            "
         )
       ])
     ])
@@ -56721,6 +57096,93 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/components/VettingCard.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/components/VettingCard.vue ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _VettingCard_vue_vue_type_template_id_06836b35_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VettingCard.vue?vue&type=template&id=06836b35&scoped=true& */ "./resources/js/components/components/VettingCard.vue?vue&type=template&id=06836b35&scoped=true&");
+/* harmony import */ var _VettingCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VettingCard.vue?vue&type=script&lang=js& */ "./resources/js/components/components/VettingCard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _VettingCard_vue_vue_type_style_index_0_id_06836b35_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss& */ "./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _VettingCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _VettingCard_vue_vue_type_template_id_06836b35_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VettingCard_vue_vue_type_template_id_06836b35_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "06836b35",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/components/VettingCard.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/components/VettingCard.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/components/VettingCard.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./VettingCard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss&":
+/*!**********************************************************************************************************************!*\
+  !*** ./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss& ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_style_index_0_id_06836b35_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=style&index=0&id=06836b35&scoped=true&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_style_index_0_id_06836b35_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_style_index_0_id_06836b35_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_style_index_0_id_06836b35_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_style_index_0_id_06836b35_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./resources/js/components/components/VettingCard.vue?vue&type=template&id=06836b35&scoped=true&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/components/components/VettingCard.vue?vue&type=template&id=06836b35&scoped=true& ***!
+  \*******************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_template_id_06836b35_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./VettingCard.vue?vue&type=template&id=06836b35&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/components/VettingCard.vue?vue&type=template&id=06836b35&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_template_id_06836b35_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VettingCard_vue_vue_type_template_id_06836b35_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/components/WeProvide.vue":
 /*!**********************************************************!*\
   !*** ./resources/js/components/components/WeProvide.vue ***!
@@ -57249,14 +57711,23 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: [{
     path: "/",
+    name: "home",
     component: _components_pages_HomePage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
     path: "/speciality",
+    name: "services",
     component: _components_pages_SpecialityServices__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
     path: "/contact",
+    name: "contact",
     component: _components_pages_ContactUs__WEBPACK_IMPORTED_MODULE_4__["default"]
   }],
+  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
+    return {
+      x: 0,
+      y: 0
+    };
+  },
   mode: "history"
 }));
 

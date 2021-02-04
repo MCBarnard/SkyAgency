@@ -13,7 +13,7 @@
                 <div class="ml-5">
                     <h6><u>Contact Details</u></h6>
                     <ul class="footer-links">
-                        <li><a class="text-white">Lynette Heynz <i>(George to Mossel Bay and surroundings)</i></a></li>
+                        <li><a class="text-white">Lynette Heyns <i>(George to Mossel Bay and surroundings)</i></a></li>
                         <li><a href="http://scanfcode.com/category/front-end-development/">021 123 1234</a></li>
                         <br>
                         <li><a class="text-white">Paul Smuts <i>(Johannesburg and surroundings)</i></a></li>

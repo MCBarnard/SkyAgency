@@ -7,9 +7,12 @@ import ContactUs from "./components/pages/ContactUs";
 Vue.use(VueRouter)
 export default new VueRouter({
     routes: [
-        { path: "/", component: HomePage },
-        { path: "/speciality", component: SpecialityServices },
-        { path: "/contact", component: ContactUs },
+        { path: "/", name:"home", component: HomePage },
+        { path: "/speciality", name:"services", component: SpecialityServices },
+        { path: "/contact", name:"contact", component: ContactUs },
     ],
+    scrollBehavior (to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    },
     mode: "history"
 })
