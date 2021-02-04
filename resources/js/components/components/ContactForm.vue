@@ -9,46 +9,94 @@
         <form @submit.prevent="sendEmail" action="/action_page.php">
             <label class="head-label">Where do you need tests done?</label>
             <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="area" id="inlineRadio2" v-model="submittedData.location" value="cpt">
-                <label class="form-check-label" for="inlineRadio2">Mosselbay / George</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="area" id="inlineRadio1" v-model="submittedData.location" value="jhb">
-                <label class="form-check-label" for="inlineRadio1">Johannesburg</label>
-            </div>
-            <label class="head-label first-item-form" for="name">Name</label>
-            <input type="text" id="name" name="name" v-model="submittedData.clientName" placeholder="Your name">
-
-            <label class="head-label" for="contact_dets">Email Or Cellphone number</label>
-            <input type="text" id="contact_dets" name="contact_dets" v-model="submittedData.clientEmail" placeholder="Email address / Cell">
-            <label class="head-label" for="test">What would you like to enquire about</label>
-            <select id="test" name="country" v-model="submittedData.testType" >
-                <option value="screening">Periodic Screening</option>
-                <option value="preEmploy">Pre Employment</option>
-                <option value="incident">Incident investigation</option>
-                <option value="vetting">Vetting</option>
-                <option value="other">Other</option>
-            </select>
-
-            <label class="head-label" for="message">Your message</label>
-            <textarea id="message" v-model="submittedData.message" name="message" placeholder="Write something.."></textarea>
-
-            <button v-if="!sending">
-                Send Email
-            </button>
-            <button class="disabled" disabled v-else>
-                Sending Email
-                <div class="spinner-grow text-light spinner-grow-sm" role="status">
-                    <span class="sr-only">Loading...</span>
+            <!--     =========================================================================================================       -->
+            <div class="input-box" :class="[{'error-input': $v.submittedData.location.$error}]">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="area" id="inlineRadio2" v-model.trim="$v.submittedData.location.$model" value="cpt">
+                    <label class="form-check-label" for="inlineRadio2">Mosselbay / George</label>
                 </div>
-            </button>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="area" id="inlineRadio1" v-model.trim="$v.submittedData.location.$model" value="jhb">
+                    <label class="form-check-label" for="inlineRadio1">Johannesburg</label>
+                </div>
+                <div v-if="$v.submittedData.location.$error" class="error-box">
+                    <div class="error" v-if="!$v.submittedData.location.required">Field is required</div>
+                    <div class="error" v-if="!$v.submittedData.location.minLength">Name must have at least {{$v.submittedData.location.$params.minLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.location.maxLength">Name may only have {{$v.submittedData.location.$params.maxLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.location.alpha">Text may only contain alphabetical characters.</div>
+                </div>
+            </div>
+            <!--     =========================================================================================================       -->
+            <div class="input-box" :class="[{'error-input': $v.submittedData.clientName.$error}]">
+                <label class="head-label first-item-form" for="name">Name</label>
+                <input type="text" id="name" name="name" v-model.trim="$v.submittedData.clientName.$model" placeholder="Your name">
+                <div v-if="$v.submittedData.clientName.$error" class="error-box">
+                    <div class="error" v-if="!$v.submittedData.clientName.required">Field is required</div>
+                    <div class="error" v-if="!$v.submittedData.clientName.minLength">Name must have at least {{$v.submittedData.clientName.$params.minLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.clientName.maxLength">Name may only have a maximum of{{$v.submittedData.clientName.$params.maxLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.clientName.alpha">Text may only contain alphabetical characters.</div>
+                </div>
+            </div>
+            <!--     =========================================================================================================       -->
+            <div class="input-box" :class="[{'error-input': $v.submittedData.clientEmail.$error}]">
+                <label class="head-label" for="contact_dets">Email Or Cellphone number</label>
+                <input type="text" id="contact_dets" name="contact_dets" v-model.trim="$v.submittedData.clientEmail.$model" placeholder="Email address / Cell">
+                <div v-if="$v.submittedData.clientEmail.$error" class="error-box">
+                    <div class="error" v-if="!$v.submittedData.clientEmail.required">Email is required</div>
+                    <div class="error" v-if="!$v.submittedData.clientEmail.minLength">Email / Cell must have at least {{$v.submittedData.clientEmail.$params.minLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.clientEmail.maxLength">Email may only have a maximum of{{$v.submittedData.clientEmail.$params.maxLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.clientEmail.email">Has to be an email or a cellphone number we can contact on.</div>
+                    <div class="error" v-if="!$v.submittedData.clientEmail.numeric">Cell number cannot contain any spaces.</div>
+                </div>
+            </div>
+            <!--     =========================================================================================================       -->
+            <div class="input-box" :class="[{'error-input': $v.submittedData.testType.$error}]">
+                <label class="head-label" for="test">What would you like to enquire about</label>
+                <select id="test" name="country" v-model.trim="$v.submittedData.testType.$model" >
+                    <option value="screening">Periodic Screening</option>
+                    <option value="preEmploy">Pre Employment</option>
+                    <option value="incident">Incident investigation</option>
+                    <option value="vetting">Vetting</option>
+                    <option value="other">Other</option>
+                </select>
+                <div v-if="$v.submittedData.testType.$error" class="error-box">
+                    <div class="error" v-if="!$v.submittedData.testType.required">Type is required</div>
+                    <div class="error" v-if="!$v.submittedData.testType.minLength">Type must have at least {{$v.submittedData.testType.$params.minLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.testType.maxLength">Type may only have a maximum of{{$v.submittedData.testType.$params.maxLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.testType.alpha">Type may only contain alphabetical characters.</div>
+                </div>
+            </div>
+            <!--     =========================================================================================================       -->
+            <div class="input-box" :class="[{'error-input': $v.submittedData.message.$error}]">
+                <label class="head-label" for="message">Your message</label>
+                <textarea id="message" v-model.trim="$v.submittedData.message.$model" name="message" placeholder="Write something.."></textarea>
+                <div v-if="$v.submittedData.message.$error" class="error-box">
+                    <div class="error" v-if="!$v.submittedData.message.required">Message is required</div>
+                    <div class="error" v-if="!$v.submittedData.message.minLength">Message must have at least {{$v.submittedData.testType.$params.minLength.min}} letters.</div>
+                    <div class="error" v-if="!$v.submittedData.message.maxLength">Message may only have a maximum of{{$v.submittedData.testType.$params.maxLength.min}} letters.</div>
+                </div>
+            </div>
+            <!--     =========================================================================================================       -->
+            <div class="input-box">
+                <button v-if="!sending">
+                    Send Email
+                </button>
+                <button class="disabled" disabled v-else>
+                    Sending Email
+                    <div class="spinner-grow text-light spinner-grow-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </button>
+            </div>
         </form>
     </div>
 </div>
 </template>
 
 <script>
+import { required, minLength, email, alpha, maxLength, or, numeric } from 'vuelidate/lib/validators'
+
+
 export default {
     name: "ContactForm",
     data() {
@@ -60,19 +108,80 @@ export default {
                 clientEmail: "",
                 testType: "screening",
                 message: ""
-            }
+            },
+            sendError: false
         }
     },
     methods: {
-        sendEmail () {
+        async sendEmail () {
+            // Validate the data
+            this.$v.submittedData.$touch();
+            if (this.$v.submittedData.$invalid) {
+                return false;
+            }
             this.sending = true;
-            setTimeout(() => {
-                this.sending = false;
-            }, 5000);
+            const data = {
+                name: this.submittedData.clientName,
+                email_num: this.submittedData.clientEmail,
+                area: this.submittedData.location,
+                subject: this.submittedData.testType,
+                message: this.submittedData.message
+            };
+            axios.post('/contact', data)
+            .then( response => {
+                if( response.status === 200) {
+                    console.log(response);
+                    setTimeout(() => {
+                        $('.toast').toast('show');
+                    }, 200);
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }else {
+                    console.error(response);
+                }
+            }).catch( error => {
+                console.error(error);
+            })
+            this.sending = false;
         }
     },
-    mounted() {
-
+    computed: {
+        clientNameErrorRequired() {
+            return this.$v.submittedData.clientName.$error;
+        },
+    },
+    validations: {
+        submittedData: {
+            clientName: {
+                required,
+                minLength: minLength(3),
+                maxLength: maxLength(30),
+                alpha
+            },
+            clientEmail: {
+                required,
+                minLength: minLength(5),
+                maxLength: maxLength(30),
+                email: or( email, numeric)
+            },
+            location: {
+                alpha,
+                required,
+                minLength: minLength(3),
+                maxLength: maxLength(3)
+            },
+            testType: {
+                required,
+                minLength: minLength(5),
+                maxLength: maxLength(30),
+                alpha
+            },
+            message: {
+                required,
+                minLength: minLength(5),
+                maxLength: maxLength(255)
+            }
+        },
     }
 }
 </script>
@@ -89,7 +198,6 @@ input[type=text], select, textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
 }
 
@@ -138,7 +246,23 @@ button.disabled {
     font-size: 16px;
     font-weight: 600;
 }
+.sub-head-label {
+    margin-top: 16px;
+}
 
+.error-input {
+    input, textarea {
+        border: 1px solid red;
+        color: red;
+    }
+
+    .head-label, .error {
+        color: red;
+    }
+}
+.input-box {
+    margin-top: 16px;
+}
 @media (max-width: 768px) {
     .container {
         max-width: unset;

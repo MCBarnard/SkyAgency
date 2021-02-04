@@ -48,6 +48,21 @@
                 </div>
             </div>
         </div>
+        <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+            <div class="toast-header">
+                <img :src="'/images/logo.png'" class="logo-image" alt="Sky Agency Logo, George">
+                <strong class="">Sky Agency</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+               <span class="material-icons">
+                    check_circle
+                </span>
+                We have successfully sent the email, we will be in touch shortly.
+            </div>
+        </div>
     </div>
 </template>
 
@@ -59,17 +74,45 @@ export default {
         ContactForm
     },
     mounted () {
-        if(this.$route.params['data']) {
-            console.log(this.$route.params['data'])
-        }
+        // if(this.$route.params['data']) {
+        //     console.log(this.$route.params['data'])
+        // }
     }
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .contact {
     margin-top: 80px;
     width: 100%;
+
+    .toast {
+        position: absolute;
+        top: 90px;
+        right: 50px;
+        background: #f1f1f1;
+
+        .toast-header {
+            justify-content: space-between;
+            border: 1px solid #1c3956;
+            strong {
+                display: block;
+            }
+        }
+
+        .material-icons {
+            display: inline-block;
+            margin-right: 8px;
+            color: green;
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+        }
+        .logo-image {
+            width: 30px;
+            margin-right: 8px;
+        }
+    }
 
     &-inner {
         max-width: 1100px;
@@ -203,6 +246,27 @@ export default {
                     }
                 }
             }
+        }
+    }
+}
+
+@media  (max-width: 570px) {
+    .contact {
+        .toast {
+            top: 25px;
+            right: 25px;
+            z-index: 9999!important;
+        }
+    }
+}
+@media  (max-width: 420px) {
+    .contact {
+        position: relative;
+        .toast {
+            top: 25px;
+            right: 20px;
+            margin-left: 20px;
+            z-index: 9999!important;
         }
     }
 }

@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/contact', 'ContactController@create')->name('contact');
 Route::get('/{any}', 'AppController@index')->where('any', '.*');
