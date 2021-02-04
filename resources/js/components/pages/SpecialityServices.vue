@@ -48,7 +48,7 @@
                         that an organisation resources possess the necessary qualifications,
                         skills and qualities needed to fulfil the position.
                     </p>
-                    <button class="btn btn-info d-block" @click="goToContact('vetting')">Reach out</button>
+                    <button class="btn d-block" @click="goToContact('vetting')">Reach out</button>
                 </div>
                 <div class="speciality-bottom">
                     <div class="card-section">
@@ -159,6 +159,12 @@ export default {
         padding: 5rem 0;
         button {
             width: 50%;
+            background: #1c3956;
+            color: #FFFFFF;
+
+            &:hover {
+                background: #42679b;
+            }
         }
     }
     &-lower {

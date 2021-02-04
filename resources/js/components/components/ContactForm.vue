@@ -6,34 +6,43 @@
             <span class="subtext">The truth is waiting...</span>
         </div>
         <hr>
-        <form action="/action_page.php">
+        <form @submit.prevent="sendEmail" action="/action_page.php">
             <label class="head-label">Where do you need tests done?</label>
             <br>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="area" id="inlineRadio2" value="cpt">
+                <input class="form-check-input" type="radio" name="area" id="inlineRadio2" v-model="submittedData.location" value="cpt">
                 <label class="form-check-label" for="inlineRadio2">Mosselbay / George</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="area" id="inlineRadio1" value="jhb">
+                <input class="form-check-input" type="radio" name="area" id="inlineRadio1" v-model="submittedData.location" value="jhb">
                 <label class="form-check-label" for="inlineRadio1">Johannesburg</label>
             </div>
-            <br>
-            <label class="head-label" for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
+            <label class="head-label first-item-form" for="name">Name</label>
+            <input type="text" id="name" name="name" v-model="submittedData.clientName" placeholder="Your name">
 
             <label class="head-label" for="contact_dets">Email Or Cellphone number</label>
-            <input type="text" id="contact_dets" name="contact_dets" placeholder="Email address / Cell">
-            <label class="head-label" for="test">Type of Test you would like to enquire about</label>
-            <select id="test" name="country">
+            <input type="text" id="contact_dets" name="contact_dets" v-model="submittedData.clientEmail" placeholder="Email address / Cell">
+            <label class="head-label" for="test">What would you like to enquire about</label>
+            <select id="test" name="country" v-model="submittedData.testType" >
+                <option value="screening">Periodic Screening</option>
                 <option value="preEmploy">Pre Employment</option>
                 <option value="incident">Incident investigation</option>
+                <option value="vetting">Vetting</option>
                 <option value="other">Other</option>
             </select>
 
             <label class="head-label" for="message">Your message</label>
-            <textarea id="message" name="message" placeholder="Write something.."></textarea>
+            <textarea id="message" v-model="submittedData.message" name="message" placeholder="Write something.."></textarea>
 
-            <input type="submit" value="Submit">
+            <button v-if="!sending">
+                Send Email
+            </button>
+            <button class="disabled" disabled v-else>
+                Sending Email
+                <div class="spinner-grow text-light spinner-grow-sm" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </button>
         </form>
     </div>
 </div>
@@ -41,11 +50,38 @@
 
 <script>
 export default {
-    name: "ContactForm"
+    name: "ContactForm",
+    data() {
+        return {
+            sending: false,
+            submittedData: {
+                location: "cpt",
+                clientName: "",
+                clientEmail: "",
+                testType: "screening",
+                message: ""
+            }
+        }
+    },
+    methods: {
+        sendEmail () {
+            this.sending = true;
+            setTimeout(() => {
+                this.sending = false;
+            }, 5000);
+        }
+    },
+    mounted() {
+
+    }
 }
 </script>
 
 <style scoped lang="scss">
+.first-item-form {
+    margin-top: 16px;
+    display: block;
+}
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -57,7 +93,7 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-input[type=submit] {
+button {
     background-color: #1c3956;
     color: white;
     padding: 12px 20px;
@@ -69,8 +105,15 @@ input[type=submit] {
     display: block;
 }
 
-input[type=submit]:hover {
+button:hover {
     background-color: #234a72;
+}
+button.disabled {
+    background: #55616d;
+    cursor: progress;
+    div {
+        margin-left: 8px;
+    }
 }
 
 .container {

@@ -2018,8 +2018,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "ContactForm"
+  name: "ContactForm",
+  data: function data() {
+    return {
+      sending: false,
+      submittedData: {
+        location: "cpt",
+        clientName: "",
+        clientEmail: "",
+        testType: "screening",
+        message: ""
+      }
+    };
+  },
+  methods: {
+    sendEmail: function sendEmail() {
+      var _this = this;
+
+      this.sending = true;
+      setTimeout(function () {
+        _this.sending = false;
+      }, 5000);
+    }
+  },
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -7145,7 +7177,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "input[type=text][data-v-14b809f6], select[data-v-14b809f6], textarea[data-v-14b809f6] {\n  width: 100%;\n  padding: 12px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  box-sizing: border-box;\n  margin-top: 6px;\n  margin-bottom: 16px;\n  resize: vertical;\n}\ninput[type=submit][data-v-14b809f6] {\n  background-color: #1c3956;\n  color: white;\n  padding: 12px 20px;\n  border: none;\n  border-radius: 4px;\n  cursor: pointer;\n  width: 100%;\n  margin: auto;\n  display: block;\n}\ninput[type=submit][data-v-14b809f6]:hover {\n  background-color: #234a72;\n}\n.container[data-v-14b809f6] {\n  border-radius: 5px;\n  padding: 20px;\n}\n.contact-us-form__wrapper__left__heading[data-v-14b809f6] {\n  color: #041b2b;\n  font-size: 22px;\n  width: 100%;\n}\n.contact-us-form__wrapper__left__heading span[data-v-14b809f6] {\n  display: block;\n  font-weight: 600;\n}\n.contact-us-form__wrapper__left__heading .subtext[data-v-14b809f6] {\n  font-weight: 400;\n  color: #3d4f5c;\n  font-size: 1rem;\n}\n.head-label[data-v-14b809f6] {\n  font-size: 16px;\n  font-weight: 600;\n}\n@media (max-width: 768px) {\n.container[data-v-14b809f6] {\n    max-width: unset;\n}\n}", ""]);
+exports.push([module.i, ".first-item-form[data-v-14b809f6] {\n  margin-top: 16px;\n  display: block;\n}\ninput[type=text][data-v-14b809f6], select[data-v-14b809f6], textarea[data-v-14b809f6] {\n  width: 100%;\n  padding: 12px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  box-sizing: border-box;\n  margin-top: 6px;\n  margin-bottom: 16px;\n  resize: vertical;\n}\nbutton[data-v-14b809f6] {\n  background-color: #1c3956;\n  color: white;\n  padding: 12px 20px;\n  border: none;\n  border-radius: 4px;\n  cursor: pointer;\n  width: 100%;\n  margin: auto;\n  display: block;\n}\nbutton[data-v-14b809f6]:hover {\n  background-color: #234a72;\n}\nbutton.disabled[data-v-14b809f6] {\n  background: #55616d;\n  cursor: progress;\n}\nbutton.disabled div[data-v-14b809f6] {\n  margin-left: 8px;\n}\n.container[data-v-14b809f6] {\n  border-radius: 5px;\n  padding: 20px;\n}\n.contact-us-form__wrapper__left__heading[data-v-14b809f6] {\n  color: #041b2b;\n  font-size: 22px;\n  width: 100%;\n}\n.contact-us-form__wrapper__left__heading span[data-v-14b809f6] {\n  display: block;\n  font-weight: 600;\n}\n.contact-us-form__wrapper__left__heading .subtext[data-v-14b809f6] {\n  font-weight: 400;\n  color: #3d4f5c;\n  font-size: 1rem;\n}\n.head-label[data-v-14b809f6] {\n  font-size: 16px;\n  font-weight: 600;\n}\n@media (max-width: 768px) {\n.container[data-v-14b809f6] {\n    max-width: unset;\n}\n}", ""]);
 
 // exports
 
@@ -7354,7 +7386,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".speciality[data-v-793f7d69] {\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: 3rem auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n}\n.speciality-upper .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: -1;\n  width: 100%;\n  -webkit-animation: 1s widthAnimation-data-v-793f7d69 ease;\n          animation: 1s widthAnimation-data-v-793f7d69 ease;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality .section-lower[data-v-793f7d69] {\n  width: 100%;\n  background: #eaeaea;\n  margin-top: 5rem;\n  padding: 5rem 0;\n}\n.speciality .section-lower button[data-v-793f7d69] {\n  width: 50%;\n}\n.speciality-lower[data-v-793f7d69] {\n  margin: auto;\n  max-width: 1100px;\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n  max-width: 500px;\n}\n.speciality-lower .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n  font-size: 2.25rem;\n}\n.speciality-lower .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: 0;\n  width: 60px;\n  -webkit-animation: 1s smallWidthAnimation-data-v-793f7d69 ease;\n          animation: 1s smallWidthAnimation-data-v-793f7d69 ease;\n}\n.speciality-lower h3[data-v-793f7d69], .speciality-lower p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality-lower p[data-v-793f7d69] {\n  margin-top: 8px;\n  display: block;\n  font-size: 24px;\n}\n.speciality-bottom[data-v-793f7d69] {\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-bottom .card-section[data-v-793f7d69] {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n}\n@-webkit-keyframes smallWidthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 60px;\n}\n}\n@keyframes smallWidthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 60px;\n}\n}\n@-webkit-keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@media (max-width: 1140px) {\n.speciality[data-v-793f7d69] {\n    padding: 0;\n}\n.speciality .section-lower[data-v-793f7d69] {\n    padding: 5rem 20px;\n    font-size: 18px;\n}\n.speciality-lower .heading[data-v-793f7d69] {\n    font-size: 30px;\n}\n.padding-wrapper[data-v-793f7d69] {\n    padding: 0 20px;\n}\n}\n@media (max-width: 1050px) {\n.speciality-inner[data-v-793f7d69] {\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n}\n.speciality-inner .spec-bot[data-v-793f7d69] {\n    margin: 40px 20px 0;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n    font-size: 24px;\n}\n.speciality-upper p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n    max-width: 380px;\n}\n.speciality-lower p[data-v-793f7d69] {\n    font-size: 20px;\n}\n}\n@media (max-width: 992px) {\n.speciality-lower[data-v-793f7d69] {\n    flex-direction: column;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n    max-width: unset;\n}\n.speciality-lower .text-container h2[data-v-793f7d69] {\n    max-width: 550px;\n}\n.speciality-lower .text-container p[data-v-793f7d69] {\n    max-width: 700px;\n}\n.speciality-lower .text-container button[data-v-793f7d69] {\n    margin-bottom: 2rem;\n}\n.speciality-bottom .card-section[data-v-793f7d69] {\n    width: 100%;\n}\n}\n@media (max-width: 792px) {\n.speciality-inner[data-v-793f7d69] {\n    flex-direction: column;\n}\n.speciality-inner .spec-bot[data-v-793f7d69] {\n    margin: 0;\n}\n}\n@media (max-width: 380px) {\n.speciality-upper .heading[data-v-793f7d69] {\n    font-size: 24px;\n}\n.speciality-upper p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container h2[data-v-793f7d69] {\n    font-size: 22px;\n}\n.speciality-lower .text-container p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container button[data-v-793f7d69] {\n    width: 100%;\n}\n}", ""]);
+exports.push([module.i, ".speciality[data-v-793f7d69] {\n  width: 100%;\n  margin-bottom: 100px;\n}\n.speciality-inner[data-v-793f7d69] {\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\n  max-width: 1100px;\n}\n.speciality-upper[data-v-793f7d69] {\n  margin: 3rem auto 50px auto;\n  max-width: 1100px;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n}\n.speciality-upper .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: -1;\n  width: 100%;\n  -webkit-animation: 1s widthAnimation-data-v-793f7d69 ease;\n          animation: 1s widthAnimation-data-v-793f7d69 ease;\n}\n.speciality-upper h3[data-v-793f7d69], .speciality-upper p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality .section-lower[data-v-793f7d69] {\n  width: 100%;\n  background: #eaeaea;\n  margin-top: 5rem;\n  padding: 5rem 0;\n}\n.speciality .section-lower button[data-v-793f7d69] {\n  width: 50%;\n  background: #1c3956;\n  color: #FFFFFF;\n}\n.speciality .section-lower button[data-v-793f7d69]:hover {\n  background: #42679b;\n}\n.speciality-lower[data-v-793f7d69] {\n  margin: auto;\n  max-width: 1100px;\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n  max-width: 500px;\n}\n.speciality-lower .heading[data-v-793f7d69] {\n  font-weight: bold;\n  position: relative;\n  display: inline-block;\n  font-size: 2.25rem;\n}\n.speciality-lower .heading[data-v-793f7d69]::before {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #1c3956;\n  z-index: 0;\n  width: 60px;\n  -webkit-animation: 1s smallWidthAnimation-data-v-793f7d69 ease;\n          animation: 1s smallWidthAnimation-data-v-793f7d69 ease;\n}\n.speciality-lower h3[data-v-793f7d69], .speciality-lower p[data-v-793f7d69] {\n  max-width: 550px;\n}\n.speciality-lower p[data-v-793f7d69] {\n  margin-top: 8px;\n  display: block;\n  font-size: 24px;\n}\n.speciality-bottom[data-v-793f7d69] {\n  display: flex;\n  justify-content: space-between;\n}\n.speciality-bottom .card-section[data-v-793f7d69] {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n}\n@-webkit-keyframes smallWidthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 60px;\n}\n}\n@keyframes smallWidthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 60px;\n}\n}\n@-webkit-keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@keyframes widthAnimation-data-v-793f7d69 {\nfrom {\n    width: 0;\n}\nto {\n    width: 100%;\n}\n}\n@media (max-width: 1140px) {\n.speciality[data-v-793f7d69] {\n    padding: 0;\n}\n.speciality .section-lower[data-v-793f7d69] {\n    padding: 5rem 20px;\n    font-size: 18px;\n}\n.speciality-lower .heading[data-v-793f7d69] {\n    font-size: 30px;\n}\n.padding-wrapper[data-v-793f7d69] {\n    padding: 0 20px;\n}\n}\n@media (max-width: 1050px) {\n.speciality-inner[data-v-793f7d69] {\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n}\n.speciality-inner .spec-bot[data-v-793f7d69] {\n    margin: 40px 20px 0;\n}\n.speciality-upper .heading[data-v-793f7d69] {\n    font-size: 24px;\n}\n.speciality-upper p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n    max-width: 380px;\n}\n.speciality-lower p[data-v-793f7d69] {\n    font-size: 20px;\n}\n}\n@media (max-width: 992px) {\n.speciality-lower[data-v-793f7d69] {\n    flex-direction: column;\n}\n.speciality-lower .text-container[data-v-793f7d69] {\n    max-width: unset;\n}\n.speciality-lower .text-container h2[data-v-793f7d69] {\n    max-width: 550px;\n}\n.speciality-lower .text-container p[data-v-793f7d69] {\n    max-width: 700px;\n}\n.speciality-lower .text-container button[data-v-793f7d69] {\n    margin-bottom: 2rem;\n}\n.speciality-bottom .card-section[data-v-793f7d69] {\n    width: 100%;\n}\n}\n@media (max-width: 792px) {\n.speciality-inner[data-v-793f7d69] {\n    flex-direction: column;\n}\n.speciality-inner .spec-bot[data-v-793f7d69] {\n    margin: 0;\n}\n}\n@media (max-width: 380px) {\n.speciality-upper .heading[data-v-793f7d69] {\n    font-size: 24px;\n}\n.speciality-upper p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container h2[data-v-793f7d69] {\n    font-size: 22px;\n}\n.speciality-lower .text-container p[data-v-793f7d69] {\n    font-size: 16px;\n}\n.speciality-lower .text-container button[data-v-793f7d69] {\n    width: 100%;\n}\n}", ""]);
 
 // exports
 
@@ -39667,26 +39699,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "contact-us-form__wrapper__left__heading" }, [
-          _c("span", [_vm._v("Ready to take the next steps?")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "subtext" }, [
-            _vm._v("The truth is waiting...")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("hr"),
-        _vm._v(" "),
-        _c("form", { attrs: { action: "/action_page.php" } }, [
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          attrs: { action: "/action_page.php" },
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.sendEmail($event)
+            }
+          }
+        },
+        [
           _c("label", { staticClass: "head-label" }, [
             _vm._v("Where do you need tests done?")
           ]),
@@ -39695,12 +39725,26 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "form-check form-check-inline" }, [
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.submittedData.location,
+                  expression: "submittedData.location"
+                }
+              ],
               staticClass: "form-check-input",
               attrs: {
                 type: "radio",
                 name: "area",
                 id: "inlineRadio2",
                 value: "cpt"
+              },
+              domProps: { checked: _vm._q(_vm.submittedData.location, "cpt") },
+              on: {
+                change: function($event) {
+                  return _vm.$set(_vm.submittedData, "location", "cpt")
+                }
               }
             }),
             _vm._v(" "),
@@ -39716,12 +39760,26 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "form-check form-check-inline" }, [
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.submittedData.location,
+                  expression: "submittedData.location"
+                }
+              ],
               staticClass: "form-check-input",
               attrs: {
                 type: "radio",
                 name: "area",
                 id: "inlineRadio1",
                 value: "jhb"
+              },
+              domProps: { checked: _vm._q(_vm.submittedData.location, "jhb") },
+              on: {
+                change: function($event) {
+                  return _vm.$set(_vm.submittedData, "location", "jhb")
+                }
               }
             }),
             _vm._v(" "),
@@ -39735,18 +39793,38 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("label", { staticClass: "head-label", attrs: { for: "name" } }, [
-            _vm._v("Name")
-          ]),
+          _c(
+            "label",
+            {
+              staticClass: "head-label first-item-form",
+              attrs: { for: "name" }
+            },
+            [_vm._v("Name")]
+          ),
           _vm._v(" "),
           _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.submittedData.clientName,
+                expression: "submittedData.clientName"
+              }
+            ],
             attrs: {
               type: "text",
               id: "name",
               name: "name",
               placeholder: "Your name"
+            },
+            domProps: { value: _vm.submittedData.clientName },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.submittedData, "clientName", $event.target.value)
+              }
             }
           }),
           _vm._v(" "),
@@ -39757,29 +39835,85 @@ var staticRenderFns = [
           ),
           _vm._v(" "),
           _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.submittedData.clientEmail,
+                expression: "submittedData.clientEmail"
+              }
+            ],
             attrs: {
               type: "text",
               id: "contact_dets",
               name: "contact_dets",
               placeholder: "Email address / Cell"
+            },
+            domProps: { value: _vm.submittedData.clientEmail },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.submittedData, "clientEmail", $event.target.value)
+              }
             }
           }),
           _vm._v(" "),
           _c("label", { staticClass: "head-label", attrs: { for: "test" } }, [
-            _vm._v("Type of Test you would like to enquire about")
+            _vm._v("What would you like to enquire about")
           ]),
           _vm._v(" "),
-          _c("select", { attrs: { id: "test", name: "country" } }, [
-            _c("option", { attrs: { value: "preEmploy" } }, [
-              _vm._v("Pre Employment")
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "incident" } }, [
-              _vm._v("Incident investigation")
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("Other")])
-          ]),
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.submittedData.testType,
+                  expression: "submittedData.testType"
+                }
+              ],
+              attrs: { id: "test", name: "country" },
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.submittedData,
+                    "testType",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                }
+              }
+            },
+            [
+              _c("option", { attrs: { value: "screening" } }, [
+                _vm._v("Periodic Screening")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "preEmploy" } }, [
+                _vm._v("Pre Employment")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "incident" } }, [
+                _vm._v("Incident investigation")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "vetting" } }, [
+                _vm._v("Vetting")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("Other")])
+            ]
+          ),
           _vm._v(" "),
           _c(
             "label",
@@ -39788,17 +39922,76 @@ var staticRenderFns = [
           ),
           _vm._v(" "),
           _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.submittedData.message,
+                expression: "submittedData.message"
+              }
+            ],
             attrs: {
               id: "message",
               name: "message",
               placeholder: "Write something.."
+            },
+            domProps: { value: _vm.submittedData.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.submittedData, "message", $event.target.value)
+              }
             }
           }),
           _vm._v(" "),
-          _c("input", { attrs: { type: "submit", value: "Submit" } })
-        ])
-      ])
+          !_vm.sending
+            ? _c("button", [
+                _vm._v("\n                Send Email\n            ")
+              ])
+            : _c(
+                "button",
+                { staticClass: "disabled", attrs: { disabled: "" } },
+                [
+                  _vm._v("\n                Sending Email\n                "),
+                  _vm._m(1)
+                ]
+              )
+        ]
+      )
     ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "contact-us-form__wrapper__left__heading" },
+      [
+        _c("span", [_vm._v("Ready to take the next steps?")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "subtext" }, [
+          _vm._v("The truth is waiting...")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "spinner-grow text-light spinner-grow-sm",
+        attrs: { role: "status" }
+      },
+      [_c("span", { staticClass: "sr-only" }, [_vm._v("Loading...")])]
+    )
   }
 ]
 render._withStripped = true
@@ -40949,7 +41142,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn btn-info d-block",
+              staticClass: "btn d-block",
               on: {
                 click: function($event) {
                   return _vm.goToContact("vetting")
