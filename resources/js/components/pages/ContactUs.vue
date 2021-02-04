@@ -132,4 +132,78 @@ export default {
         }
     }
 }
+
+@media (max-width: 1150px) {
+    .contact {
+        &-inner {
+            max-width: 100%;
+            padding: 0 20px;
+
+            &-left {
+                &-form {
+                }
+            }
+
+            &-right {
+                .top h3{
+                }
+
+                .bottom {
+                    .head {
+                    }
+
+                    p {
+                    }
+                    .contact-link {
+                    }
+                    .material-icons {
+                    }
+                    .contact-card {
+                        .card-logo-image {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contact {
+        &-inner {
+            flex-direction: column-reverse;
+
+            &-left {
+                margin: auto;
+                &-form {
+                    margin-top: 3rem;
+                }
+            }
+
+            &-right {
+                margin: auto;
+                max-width: 600px;
+                .top h3{
+                    max-width: unset;
+                }
+
+                .bottom {
+                    max-width: unset;
+                    .head {
+                    }
+
+                    p {
+                    }
+                    .contact-link {
+                    }
+                    .material-icons {
+                    }
+                    .contact-card {
+                        .card-logo-image {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 </style>

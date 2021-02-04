@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c599882-d78f-4fd7-9c43-300ae57b19c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/components/VettingCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/components/SpecialityCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/components/SpecialityCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/components/SpecialityHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/components/SpecialityHero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/components/WeProvide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/components/WeProvide.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/components/ContactForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/components/ContactForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/pages/ContactUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/ContactUs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/SpecialityServices.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/SpecialityServices.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +203,7 @@
       <workItem from="1611571365006" duration="1440000" />
       <workItem from="1611641001046" duration="4257000" />
       <workItem from="1612351112520" duration="1512000" />
-      <workItem from="1612357198144" duration="10504000" />
+      <workItem from="1612357198144" duration="12514000" />
     </task>
     <servers />
   </component>

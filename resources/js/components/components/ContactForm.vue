@@ -95,4 +95,10 @@ input[type=submit]:hover {
     font-size: 16px;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: unset;
+    }
+}
 </style>
