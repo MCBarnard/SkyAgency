@@ -7381,7 +7381,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".logos[data-v-363156a8] {\n  width: 100%;\n}\n.logos-inner[data-v-363156a8] {\n  width: 100%;\n  max-width: 1100px;\n  margin: 50px auto;\n}\n.logos-inner .heading[data-v-363156a8] {\n  display: flex;\n  font-size: 24px;\n}\n.logos-inner .heading i[data-v-363156a8] {\n  color: gold;\n  line-height: 37px;\n}\n.logos-inner .heading span[data-v-363156a8] {\n  padding-left: 10px;\n}\n.logos-inner-logos[data-v-363156a8] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.logos-inner-logos img[data-v-363156a8] {\n  margin: 10px 30px;\n}\n.logos-inner-logos .absa[data-v-363156a8] {\n  max-width: 150px;\n  margin-left: 0;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 55px;\n  margin-top: 30px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n  max-width: 120px;\n  max-height: 100px;\n  margin-top: 0;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 150px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 60px;\n  margin-top: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 50px;\n  margin-top: 40px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 45px;\n  margin-top: 40px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n  max-width: 270px;\n  max-height: 50px;\n  margin-right: 0;\n  margin-top: 25px;\n}\n@media (max-width: 1150px) {\n.logos-inner-logos .edcon[data-v-363156a8] {\n    display: none;\n}\n}\n@media (max-width: 920px) {\n.logos-inner-logos .absa[data-v-363156a8] {\n    max-width: 90px;\n    margin-left: 30px;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n    max-width: 90px;\n    max-height: 40px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n    display: none;\n    max-width: 90px;\n    max-height: 60px;\n    margin-top: 12px;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n    max-width: 90px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n    display: unset;\n    max-width: 140px;\n    max-height: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n    max-width: 140px;\n    max-height: 35px;\n    margin-top: 20px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n    max-width: 140px;\n    max-height: 30px;\n    margin-top: 25px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 35px;\n    margin-top: 24px;\n    margin-right: 30px;\n}\n}\n@media (max-width: 710px) {\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n    display: none;\n}\n}\n@media (max-width: 576px) {\n.logos[data-v-363156a8] {\n    padding: 0 20px;\n}\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px 15px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n    display: none;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 30px;\n}\n}\n@media (max-width: 340px) {\n.logos[data-v-363156a8] {\n    display: none;\n}\n}", ""]);
+exports.push([module.i, ".logos[data-v-363156a8] {\n  width: 100%;\n}\n.logos-inner[data-v-363156a8] {\n  width: 100%;\n  max-width: 1100px;\n  margin: 50px auto;\n}\n.logos-inner .heading[data-v-363156a8] {\n  display: flex;\n  font-size: 24px;\n}\n.logos-inner .heading i[data-v-363156a8] {\n  color: gold;\n  line-height: 37px;\n}\n.logos-inner .heading span[data-v-363156a8] {\n  padding-left: 10px;\n}\n.logos-inner-logos[data-v-363156a8] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.logos-inner-logos img[data-v-363156a8] {\n  margin: 10px 30px;\n}\n.logos-inner-logos .absa[data-v-363156a8] {\n  max-width: 150px;\n  margin-left: 0;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 55px;\n  margin-top: 30px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n  max-width: 120px;\n  max-height: 100px;\n  margin-top: 0;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n  max-width: 150px;\n  max-height: 150px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 60px;\n  margin-top: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 50px;\n  margin-top: 40px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n  max-width: 200px;\n  max-height: 45px;\n  margin-top: 40px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n  max-width: 270px;\n  max-height: 50px;\n  margin-right: 0;\n  margin-top: 25px;\n}\n@media (max-width: 1150px) {\n.logos-inner-logos .edcon[data-v-363156a8] {\n    display: none;\n}\n}\n@media (max-width: 920px) {\n.logos-inner-logos .absa[data-v-363156a8] {\n    max-width: 90px;\n    margin-left: 30px;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n    max-width: 90px;\n    max-height: 40px;\n}\n.logos-inner-logos .edcon[data-v-363156a8] {\n    display: none;\n    max-width: 90px;\n    max-height: 60px;\n    margin-top: 12px;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n    max-width: 90px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n    display: unset;\n    max-width: 140px;\n    max-height: 30px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n    max-width: 140px;\n    max-height: 35px;\n    margin-top: 20px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n    max-width: 140px;\n    max-height: 30px;\n    margin-top: 25px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 35px;\n    margin-top: 24px;\n    margin-right: 30px;\n}\n}\n@media (max-width: 710px) {\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px;\n}\n.logos-inner-logos .foschini[data-v-363156a8] {\n    display: none;\n}\n}\n@media (max-width: 576px) {\n.logos[data-v-363156a8] {\n    padding: 0 20px;\n}\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px 15px;\n}\n.logos-inner-logos .nedbank[data-v-363156a8] {\n    display: none;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 30px;\n}\n}\n@media (max-width: 440px) {\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px 5px;\n}\n}\n@media (max-width: 400px) {\n.logos-inner-logos img[data-v-363156a8] {\n    margin: 10px 5px;\n}\n.logos-inner-logos .southernsun[data-v-363156a8] {\n    max-height: 25px;\n    margin-right: 0;\n}\n.logos-inner-logos .dhl[data-v-363156a8] {\n    max-width: 65px;\n    max-height: 25px;\n}\n.logos-inner-logos .oldmutual[data-v-363156a8] {\n    max-height: 25px;\n}\n.logos-inner-logos .absa[data-v-363156a8] {\n    margin-left: 0;\n    max-width: 65px;\n}\n.logos-inner-logos .fnb[data-v-363156a8] {\n    max-width: 75px;\n}\n}\n@media (max-width: 340px) {\n.logos[data-v-363156a8] {\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -40642,12 +40642,6 @@ var render = function() {
           }
         },
         [
-          _c("label", { staticClass: "head-label" }, [
-            _vm._v("Where do you need tests done?")
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c(
             "div",
             {
@@ -40660,6 +40654,12 @@ var render = function() {
               ]
             },
             [
+              _c("label", { staticClass: "head-label" }, [
+                _vm._v("Where do you need our services?")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
               _c("div", { staticClass: "form-check form-check-inline" }, [
                 _c("input", {
                   directives: [
@@ -41323,7 +41323,7 @@ var render = function() {
         _c("img", {
           staticClass: "dhl",
           attrs: {
-            src: "/images/logo-pack/DHL.png",
+            src: "/images/logo-pack/dsv.png",
             alt: "Sky agency polygraphs, George. Big Client DHL"
           }
         }),

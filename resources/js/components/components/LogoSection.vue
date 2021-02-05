@@ -6,7 +6,7 @@
             </div>
             <div class="logos-inner-logos">
                 <img class="absa" :src="'/images/logo-pack/absa.svg'" alt="Sky agency polygraphs, George. Big Client ABSA">
-                <img class="dhl" :src="'/images/logo-pack/DHL.png'" alt="Sky agency polygraphs, George. Big Client DHL">
+                <img class="dhl" :src="'/images/logo-pack/dsv.png'" alt="Sky agency polygraphs, George. Big Client DHL">
                 <img class="fnb" :src="'/images/logo-pack/FNB.svg'" alt="Sky agency polygraphs, George. Big Client fnb">
                 <img class="nedbank" :src="'/images/logo-pack/nedbank.png'" alt="Sky agency polygraphs, George. Big Client nedbank">
                 <img class="oldmutual" :src="'/images/logo-pack/OM.png'" alt="Sky agency polygraphs, George. Big Client Old Mutual">
@@ -178,7 +178,7 @@ export default {
         &-inner {
             &-logos {
                 img {
-                    margin: 10px 15px;
+                  margin: 10px 15px;
                 }
                 .nedbank {
                     display: none;
@@ -189,6 +189,48 @@ export default {
             }
         }
     }
+}
+@media (max-width: 440px) {
+
+  .logos {
+    &-inner {
+      &-logos {
+        img {
+          margin: 10px 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+
+  .logos {
+    &-inner {
+      &-logos {
+        img {
+          margin: 10px 5px;
+        }
+        .southernsun {
+          max-height: 25px;
+          margin-right: 0;
+        }
+        .dhl {
+          max-width: 65px;
+          max-height: 25px;
+        }
+        .oldmutual {
+          max-height: 25px;
+        }
+        .absa {
+          margin-left: 0;
+          max-width: 65px;
+        }
+        .fnb {
+          max-width: 75px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 340px) {
     .logos {

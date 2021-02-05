@@ -7,10 +7,10 @@
         </div>
         <hr>
         <form @submit.prevent="sendEmail" action="/action_page.php">
-            <label class="head-label">Where do you need tests done?</label>
-            <br>
             <!--     =========================================================================================================       -->
             <div class="input-box" :class="[{'error-input': $v.submittedData.location.$error && this.$v.$anyDirty}]">
+                <label class="head-label">Where do you need our services?</label>
+                <br>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="area" id="inlineRadio2" v-model.trim="$v.submittedData.location.$model" value="cpt">
                     <label class="form-check-label" for="inlineRadio2">Mosselbay / George</label>
