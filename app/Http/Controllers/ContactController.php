@@ -17,7 +17,8 @@ class ContactController extends Controller
             'subject' => 'required|string|max:255',
             'message' => 'required|string|max:255',
         ]);
-        $receiver = $request->area === 'cpt' ? 'lynette@skyagency.co.za' : 'paul@skyagency.co.za';
+//        $receiver = $request->area === 'cpt' ? 'lynette@skyagency.co.za' : 'paul@skyagency.co.za';
+        $receiver = "thinus.barnard@payfast.co.za";
         $receiverName = $request->area === 'cpt' ? 'Lynette' : 'Paul';
         $data = [
             'name' => htmlentities($request->name),
