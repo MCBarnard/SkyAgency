@@ -2141,21 +2141,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 };
                 axios.post('/contact', data).then(function (response) {
                   if (response.status === 200) {
-                    console.log(response);
+                    _this.submittedData.clientName = "";
+                    _this.submittedData.clientEmail = "";
+                    _this.submittedData.location = "cpt";
+                    _this.submittedData.testType = "screening";
+                    _this.submittedData.message = "";
+                    _this.$v.submittedData.$reset;
                     setTimeout(function () {
                       $('.toast').toast('show');
                     }, 200);
                     document.body.scrollTop = 0;
                     document.documentElement.scrollTop = 0;
+                    _this.sending = false;
                   } else {
                     console.error(response);
+                    _this.sending = false;
                   }
                 })["catch"](function (error) {
                   console.error(error);
                 });
-                _this.sending = false;
 
-              case 7:
+              case 6:
               case "end":
                 return _context.stop();
             }
@@ -2174,8 +2180,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       clientName: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
         minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(3),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(30),
-        alpha: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["alpha"]
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(30)
       },
       clientEmail: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],

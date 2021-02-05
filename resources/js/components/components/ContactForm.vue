@@ -130,19 +130,25 @@ export default {
             axios.post('/contact', data)
             .then( response => {
                 if( response.status === 200) {
-                    console.log(response);
+                    this.submittedData.clientName = "";
+                    this.submittedData.clientEmail = "";
+                    this.submittedData.location = "cpt";
+                    this.submittedData.testType = "screening";
+                    this.submittedData.message = "";
+                    this.$v.submittedData.$reset;
                     setTimeout(() => {
                         $('.toast').toast('show');
                     }, 200);
                     document.body.scrollTop = 0;
                     document.documentElement.scrollTop = 0;
+                    this.sending = false;
                 }else {
                     console.error(response);
+                    this.sending = false;
                 }
             }).catch( error => {
                 console.error(error);
             })
-            this.sending = false;
         }
     },
     computed: {
@@ -156,7 +162,6 @@ export default {
                 required,
                 minLength: minLength(3),
                 maxLength: maxLength(30),
-                alpha
             },
             clientEmail: {
                 required,
