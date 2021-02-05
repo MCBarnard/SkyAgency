@@ -18,7 +18,7 @@ class ContactController extends Controller
             'message' => 'required|string|max:255',
         ]);
 //        $receiver = $request->area === 'cpt' ? 'lynette@skyagency.co.za' : 'paul@skyagency.co.za';
-        $receiver = "thinus.barnard@payfast.co.za";
+        $receiver = "thinusplanb97@gmail.com";
         $receiverName = $request->area === 'cpt' ? 'Lynette' : 'Paul';
         $data = [
             'name' => htmlentities($request->name),
@@ -26,8 +26,10 @@ class ContactController extends Controller
             'subject' => htmlentities($request->subject),
             'message' => htmlentities($request->message),
             ];
+
         Mail::send('layouts.email', ['data' => $data], function ($message) use ($data, $receiver, $receiverName) {
-            $message->to($receiver, $receiverName)->subject($data['subject']);
+            $message->to($receiver, $receiverName)
+                ->subject($data['subject']);
             $message->from('no-reply@skyagency.co.za', 'Sky Website');
         Log::info('Email sent successfully');
         });
