@@ -2146,7 +2146,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     _this.submittedData.location = "cpt";
                     _this.submittedData.testType = "screening";
                     _this.submittedData.message = "";
-                    _this.$v.submittedData.$reset;
+
+                    _this.$v.submittedData.$reset();
+
                     setTimeout(function () {
                       $('.toast').toast('show');
                     }, 200);
@@ -2168,11 +2170,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           }
         }, _callee);
       }))();
-    }
-  },
-  computed: {
-    clientNameErrorRequired: function clientNameErrorRequired() {
-      return this.$v.submittedData.clientName.$error;
     }
   },
   validations: {
@@ -40655,7 +40652,12 @@ var render = function() {
             "div",
             {
               staticClass: "input-box",
-              class: [{ "error-input": _vm.$v.submittedData.location.$error }]
+              class: [
+                {
+                  "error-input":
+                    _vm.$v.submittedData.location.$error && this.$v.$anyDirty
+                }
+              ]
             },
             [
               _c("div", { staticClass: "form-check form-check-inline" }, [
@@ -40742,7 +40744,7 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm.$v.submittedData.location.$error
+              _vm.$v.submittedData.location.$error && this.$v.$anyDirty
                 ? _c("div", { staticClass: "error-box" }, [
                     !_vm.$v.submittedData.location.required
                       ? _c("div", { staticClass: "error" }, [
@@ -40792,7 +40794,12 @@ var render = function() {
             "div",
             {
               staticClass: "input-box",
-              class: [{ "error-input": _vm.$v.submittedData.clientName.$error }]
+              class: [
+                {
+                  "error-input":
+                    _vm.$v.submittedData.clientName.$error && this.$v.$anyDirty
+                }
+              ]
             },
             [
               _c(
@@ -40838,7 +40845,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _vm.$v.submittedData.clientName.$error
+              _vm.$v.submittedData.clientName.$error && this.$v.$anyDirty
                 ? _c("div", { staticClass: "error-box" }, [
                     !_vm.$v.submittedData.clientName.required
                       ? _c("div", { staticClass: "error" }, [
@@ -40889,7 +40896,10 @@ var render = function() {
             {
               staticClass: "input-box",
               class: [
-                { "error-input": _vm.$v.submittedData.clientEmail.$error }
+                {
+                  "error-input":
+                    _vm.$v.submittedData.clientEmail.$error && this.$v.$anyDirty
+                }
               ]
             },
             [
@@ -40933,7 +40943,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _vm.$v.submittedData.clientEmail.$error
+              _vm.$v.submittedData.clientEmail.$error && this.$v.$anyDirty
                 ? _c("div", { staticClass: "error-box" }, [
                     !_vm.$v.submittedData.clientEmail.required
                       ? _c("div", { staticClass: "error" }, [
@@ -40989,7 +40999,12 @@ var render = function() {
             "div",
             {
               staticClass: "input-box",
-              class: [{ "error-input": _vm.$v.submittedData.testType.$error }]
+              class: [
+                {
+                  "error-input":
+                    _vm.$v.submittedData.testType.$error && this.$v.$anyDirty
+                }
+              ]
             },
             [
               _c(
@@ -41052,7 +41067,7 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _vm.$v.submittedData.testType.$error
+              _vm.$v.submittedData.testType.$error && this.$v.$anyDirty
                 ? _c("div", { staticClass: "error-box" }, [
                     !_vm.$v.submittedData.testType.required
                       ? _c("div", { staticClass: "error" }, [
@@ -41102,7 +41117,12 @@ var render = function() {
             "div",
             {
               staticClass: "input-box",
-              class: [{ "error-input": _vm.$v.submittedData.message.$error }]
+              class: [
+                {
+                  "error-input":
+                    _vm.$v.submittedData.message.$error && this.$v.$anyDirty
+                }
+              ]
             },
             [
               _c(
@@ -41144,7 +41164,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _vm.$v.submittedData.message.$error
+              _vm.$v.submittedData.message.$error && this.$v.$anyDirty
                 ? _c("div", { staticClass: "error-box" }, [
                     !_vm.$v.submittedData.message.required
                       ? _c("div", { staticClass: "error" }, [

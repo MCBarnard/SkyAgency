@@ -10,7 +10,7 @@
             <label class="head-label">Where do you need tests done?</label>
             <br>
             <!--     =========================================================================================================       -->
-            <div class="input-box" :class="[{'error-input': $v.submittedData.location.$error}]">
+            <div class="input-box" :class="[{'error-input': $v.submittedData.location.$error && this.$v.$anyDirty}]">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="area" id="inlineRadio2" v-model.trim="$v.submittedData.location.$model" value="cpt">
                     <label class="form-check-label" for="inlineRadio2">Mosselbay / George</label>
@@ -19,7 +19,7 @@
                     <input class="form-check-input" type="radio" name="area" id="inlineRadio1" v-model.trim="$v.submittedData.location.$model" value="jhb">
                     <label class="form-check-label" for="inlineRadio1">Johannesburg</label>
                 </div>
-                <div v-if="$v.submittedData.location.$error" class="error-box">
+                <div v-if="$v.submittedData.location.$error && this.$v.$anyDirty" class="error-box">
                     <div class="error" v-if="!$v.submittedData.location.required">Field is required</div>
                     <div class="error" v-if="!$v.submittedData.location.minLength">Name must have at least {{$v.submittedData.location.$params.minLength.min}} letters.</div>
                     <div class="error" v-if="!$v.submittedData.location.maxLength">Name may only have {{$v.submittedData.location.$params.maxLength.min}} letters.</div>
@@ -27,10 +27,10 @@
                 </div>
             </div>
             <!--     =========================================================================================================       -->
-            <div class="input-box" :class="[{'error-input': $v.submittedData.clientName.$error}]">
+            <div class="input-box" :class="[{'error-input': $v.submittedData.clientName.$error && this.$v.$anyDirty}]">
                 <label class="head-label first-item-form" for="name">Name</label>
                 <input type="text" id="name" name="name" v-model.trim="$v.submittedData.clientName.$model" placeholder="Your name">
-                <div v-if="$v.submittedData.clientName.$error" class="error-box">
+                <div v-if="$v.submittedData.clientName.$error && this.$v.$anyDirty" class="error-box">
                     <div class="error" v-if="!$v.submittedData.clientName.required">Field is required</div>
                     <div class="error" v-if="!$v.submittedData.clientName.minLength">Name must have at least {{$v.submittedData.clientName.$params.minLength.min}} letters.</div>
                     <div class="error" v-if="!$v.submittedData.clientName.maxLength">Name may only have a maximum of{{$v.submittedData.clientName.$params.maxLength.min}} letters.</div>
@@ -38,10 +38,10 @@
                 </div>
             </div>
             <!--     =========================================================================================================       -->
-            <div class="input-box" :class="[{'error-input': $v.submittedData.clientEmail.$error}]">
+            <div class="input-box" :class="[{'error-input': $v.submittedData.clientEmail.$error && this.$v.$anyDirty}]">
                 <label class="head-label" for="contact_dets">Email Or Cellphone number</label>
                 <input type="text" id="contact_dets" name="contact_dets" v-model.trim="$v.submittedData.clientEmail.$model" placeholder="Email address / Cell">
-                <div v-if="$v.submittedData.clientEmail.$error" class="error-box">
+                <div v-if="$v.submittedData.clientEmail.$error && this.$v.$anyDirty" class="error-box">
                     <div class="error" v-if="!$v.submittedData.clientEmail.required">Email is required</div>
                     <div class="error" v-if="!$v.submittedData.clientEmail.minLength">Email / Cell must have at least {{$v.submittedData.clientEmail.$params.minLength.min}} letters.</div>
                     <div class="error" v-if="!$v.submittedData.clientEmail.maxLength">Email may only have a maximum of{{$v.submittedData.clientEmail.$params.maxLength.min}} letters.</div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!--     =========================================================================================================       -->
-            <div class="input-box" :class="[{'error-input': $v.submittedData.testType.$error}]">
+            <div class="input-box" :class="[{'error-input': $v.submittedData.testType.$error && this.$v.$anyDirty}]">
                 <label class="head-label" for="test">What would you like to enquire about</label>
                 <select id="test" name="country" v-model.trim="$v.submittedData.testType.$model" >
                     <option value="screening">Periodic Screening</option>
@@ -59,7 +59,7 @@
                     <option value="vetting">Vetting</option>
                     <option value="other">Other</option>
                 </select>
-                <div v-if="$v.submittedData.testType.$error" class="error-box">
+                <div v-if="$v.submittedData.testType.$error && this.$v.$anyDirty" class="error-box">
                     <div class="error" v-if="!$v.submittedData.testType.required">Type is required</div>
                     <div class="error" v-if="!$v.submittedData.testType.minLength">Type must have at least {{$v.submittedData.testType.$params.minLength.min}} letters.</div>
                     <div class="error" v-if="!$v.submittedData.testType.maxLength">Type may only have a maximum of{{$v.submittedData.testType.$params.maxLength.min}} letters.</div>
@@ -67,10 +67,10 @@
                 </div>
             </div>
             <!--     =========================================================================================================       -->
-            <div class="input-box" :class="[{'error-input': $v.submittedData.message.$error}]">
+            <div class="input-box" :class="[{'error-input': $v.submittedData.message.$error && this.$v.$anyDirty}]">
                 <label class="head-label" for="message">Your message</label>
                 <textarea id="message" v-model.trim="$v.submittedData.message.$model" name="message" placeholder="Write something.."></textarea>
-                <div v-if="$v.submittedData.message.$error" class="error-box">
+                <div v-if="$v.submittedData.message.$error && this.$v.$anyDirty" class="error-box">
                     <div class="error" v-if="!$v.submittedData.message.required">Message is required</div>
                     <div class="error" v-if="!$v.submittedData.message.minLength">Message must have at least {{$v.submittedData.testType.$params.minLength.min}} letters.</div>
                     <div class="error" v-if="!$v.submittedData.message.maxLength">Message may only have a maximum of{{$v.submittedData.testType.$params.maxLength.min}} letters.</div>
@@ -127,6 +127,7 @@ export default {
                 subject: this.submittedData.testType,
                 message: this.submittedData.message
             };
+
             axios.post('/contact', data)
             .then( response => {
                 if( response.status === 200) {
@@ -135,7 +136,7 @@ export default {
                     this.submittedData.location = "cpt";
                     this.submittedData.testType = "screening";
                     this.submittedData.message = "";
-                    this.$v.submittedData.$reset;
+                    this.$v.submittedData.$reset();
                     setTimeout(() => {
                         $('.toast').toast('show');
                     }, 200);
@@ -150,11 +151,6 @@ export default {
                 console.error(error);
             })
         }
-    },
-    computed: {
-        clientNameErrorRequired() {
-            return this.$v.submittedData.clientName.$error;
-        },
     },
     validations: {
         submittedData: {
