@@ -350,9 +350,17 @@
                                 <tr>
                                     <td>
                                         <h3>New enquiry from {{ $data['name'] }}</h3>
-                                        <p style="background: #f7f7f7; border: 1px solid grey; min-height: 200px; padding: 20px; border-radius: 8px">
-                                            {{ $data['message'] }}
-                                        </p>
+                                        <div style="background: #f7f7f7; border: 1px solid grey; min-height: 200px; padding: 20px; border-radius: 8px">
+                                            <pre style="
+                                            width: 100%;max-width: 600px;
+                                            flex-wrap: wrap;
+                                            overflow-x: auto;
+                                            white-space: pre-wrap;
+                                            white-space: -moz-pre-wrap;
+                                            white-space: -o-pre-wrap;
+                                            word-wrap: break-word;"
+                                            >{{ $data['message'] }}</pre>
+                                        </div>
                                         <hr>
                                         <h3>Their contact information:</h3>
                                         <table>
