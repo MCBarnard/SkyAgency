@@ -1,6 +1,6 @@
 <template>
     <div class="speciality-card">
-        <div class="speciality-card-inner">
+        <div class="speciality-card-inner" :class="[{ 'list-item': list }]">
             <div class="speciality-card-inner-image">
                 <slot name="icon"></slot>
             </div>
@@ -21,6 +21,9 @@ export default {
     props: {
         routeLink: {
             type: String
+        },
+        list: {
+            type: Boolean
         }
     }
 }
@@ -32,7 +35,7 @@ export default {
     position: relative;
 
     &-inner {
-        padding: 20px;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
 
@@ -63,6 +66,10 @@ export default {
             }
         }
     }
+
+    .list-item {
+        max-width: 422px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -87,12 +94,17 @@ export default {
         margin: 10px auto;
 
         &-inner {
+            max-width: 846px;
             &-image {
                 min-width: 50px;
             }
             &-content {
                 max-width: 740px;
             }
+        }
+
+        .list-item {
+            max-width: 480px;
         }
     }
 }

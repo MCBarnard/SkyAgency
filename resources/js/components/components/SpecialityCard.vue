@@ -24,7 +24,10 @@ export default {
     props: {
         routeLink: {
             type: String
-        }
+        },
+        lineBlock: {
+            type: Boolean
+        },
     }
 }
 </script>
@@ -89,6 +92,10 @@ export default {
                 }
             }
         }
+    }
+
+    .line-block {
+      padding: 0 20px;
     }
 
     &:hover {

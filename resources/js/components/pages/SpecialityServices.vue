@@ -37,6 +37,12 @@
                 </template>
             </SpecialityCard>
         </div>
+            <div id="other-offences" class="speciality-upper">
+            <h3 class="heading">Matrimonial and Sexual offences</h3>
+            <p>
+                We are open minded and understand every situation requires a unique approach, therefore, we also assist with any offences related to infidelity or sexual related matters.
+            </p>
+        </div>
         </div>
         <div class="section-lower">
             <div class="speciality-lower">
@@ -73,6 +79,21 @@
                             <template v-slot:paragraph>
                                 We help ensure that your products, processes and services reach the latest national and
                                 international standards as efficiently, effectively and timely as possible.
+                            </template>
+                        </VettingCard>
+                        <VettingCard :list="true">
+                            <template v-slot:icon>
+                                <span class="material-icons">
+                                    check_box
+                                </span>
+                            </template>
+                            <template v-slot:heading>Individual and Business Vetting</template>
+                            <template v-slot:paragraph>
+                                    <li>Company and Business verifications</li>
+                                    <li>ID verifications</li>
+                                    <li>DHA facial recognitions and identification</li>
+                                    <li>Biometrics and criminal background checks</li>
+                                    <li>Credit Records</li>
                             </template>
                         </VettingCard>
                         <VettingCard class="spec-bot">
@@ -123,6 +144,13 @@ export default {
         margin: auto;
         justify-content: space-between;
         max-width: 1100px;
+    }
+    #other-offences {
+        width: 100%;
+        text-align: center;
+        p {
+            margin: auto;
+        }
     }
     &-upper {
         margin: 3rem auto 50px auto;
@@ -258,6 +286,7 @@ export default {
         &-inner {
             flex-wrap: wrap;
             justify-content: space-evenly;
+
             .spec-bot {
                 margin: 40px 20px 0;
             }
